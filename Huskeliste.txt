@@ -1,0 +1,5 @@
+Tips fra studass:
+1. Hovedsaklig bruk av html, css og javascript. Flexbox og grid er anbefalt å bruke, siden sentrering og skallering blir mye lettere.
+2. Pass på å validere html filene, ellers kan man miste poeng.
+3. Det er ikke eksamen i år og prosjektet teller dermed 60% av karakteren.
+

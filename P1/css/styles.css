@@ -17,3 +17,7 @@ body, div, header, footer{
     font-size: 17px;
 }
 
+img {
+    float: right;  
+    margin: 5px;
+}

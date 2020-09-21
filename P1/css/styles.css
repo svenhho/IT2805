@@ -20,4 +20,6 @@ body, div, header, footer{
 img {
     float: right;  
     margin: 5px;
+    margin-top: 40px;
 }
+

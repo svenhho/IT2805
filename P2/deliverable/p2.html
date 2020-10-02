@@ -84,7 +84,7 @@
         <p>Denne informasjonen blir da også mulig å finne lengre ned på siden dersom man scroller seg videre nedover. Der vil det være mulig å finne åpningstider og adresser for hver enkelt salong. Vi tenker også å sette inn bilder av fasadene til hver enkelt salong slik at det skal være enklere for nye kunder å finne frem. </p>
 
         <h4>Søk jobb (søk_jobb.html)</h4>
-        <p>Siden <i>KLPP.</i> er en helt nyoppstartet frisørkjede er Johannes fremdeles på jakt etter flere ansatte. På denne siden ønsker han derfor å fortelle litt om hvordan det er å jobbe som frisør i <i>KLPP.</i> og hvilke forventninger han har til sine ansatte. Det vil ikke være mulig å fylle inn direkte på siden, men det vil være mulig å laste opp både søknad og CV på denne siden.</p>
+        <p>Siden <i>KLPP.</i> er en helt nyoppstartet frisørkjede er Johannes fremdeles på jakt etter flere ansatte. På dennes siden vil det være mulig å fylle inn fornavn, etternavn, e-post, telefonnummer og srive en søknad. I tillegg vil det være mulig å laste opp en CV på denne siden. Etter at man har sendt inn søknad vil det komme opp en pop-up med bekreftelse om at søknaden er mottatt.</p>
         
         <h4>Galleri (galleri.html)</h4>
         <p>Dette skal være en side med bilder av resultater av  de ulike frisyrene og behandlingene som har blitt gjort hos <i>KLPP.</i> Her kan kundene gå inn å se hva frisørene kan og hente inspirasjon til hva de kan gjøre hos <i>KLPP.</i></p>
@@ -102,12 +102,216 @@
         </header>
 
         <h4>random_images.js</h4>
-        <p>Ved hjelp av en javascript funksjon skal bildet i bakgrunnen på forsiden tilfeldig rotere gjennom et galleri. Ved å se et utvalg av forskjellige frisyrer og stiler vil brukeren forhåpentligvis bli mer inspirert til å bestille en time hos KLPP. og dette kan deretter lett utføres ved å trykke på bestill time knappen på samme side. Javascriptet vil bruke random math til å velge blant de forskjellige bildene i galleriet. </p>
+        <p>Ved hjelp av en javascript funksjon skal bildet i bakgrunnen på forsiden tilfeldig rotere gjennom et galleri. Ved å se et utvalg av forskjellige frisyrer og stiler vil brukeren forhåpentligvis bli mer inspirert til å bestille en time hos KLPP. og dette kan deretter lett utføres ved å trykke på bestill time knappen på samme side. Javascriptet vil bruke random math til å velge blant de forskjellige bildene i galleriet.</p>
 
+        <h4>image_size.js</h4>
+        <p>I Galleri-siden skal det være en javascript funksjon som lager et pop-up vindu som viser full størrelse på bilde når thumbnailen blir klikket. På galleri-siden vil det være mange bilder som skal inspirere kunder til ulike hårfrisyrer og behandlinger. For å vise variasjon er det ønskelig med flere bilder i mindre format så det blir plass til flere bilder på nettsiden. Når et bilde er valgt til å vise full størrelse er det ønskelig at det er en grået bakgrunn for å fremheve pop-up vinduet.</p>
+        
         <h4>priskalkulator.js</h4>
         <p>I bestill time delen av siden får man blant annet opp en liste over de forskjellige behandlingene KLPP. tilbyr. Når man huker av de forskjellige alternativene skal siden, ved hjelp av en javascript funksjon, gi brukeren totalprisen live under alternativene. Dette vil hjelpe til med å etablere tillit mellom brukere og frisøren, og vil gi siden et mer profesjonelt preg.</p>
-    </div>
+        
+        <h4>bestillingsbekreftelse.js</h4>
+        <p>Når bruker fyller inn en bestilling er det viktig at man får en feedback på at nettsiden har akseptert søknaden. Denne bekreftelsen skal bli vist til brukeren slik at brukeren er trygg på at bestillingen har gått gjennom systemet. Når brukeren har fylt ut bestillingssiden og trykker bestill så skal nettsiden refreshe og vise en tom bestillingsside. Samtidig skal det komme et pop-up vindu som viser at bestillingen er bekreftet. En grået bakgrunn er ønskelig for å tydeliggjøre pop-up vinduet. Når brukeren lukker vinduet kan man starte på en ny bestilling siden nettsiden er tilbakestilt til normaltilstanden (default).</p>
+        
+        <h4>søknadsbekreftelse.js</h4>
+        <p>Når en jobbsøker fyller inn formet er det viktig at det blir gitt tydelig feedback på at KLPP. har mottatt søknaden. Denne bekreftelsen er viktig fordi det gir søkeren en trygghet på at innsendingen er akseptert. Ved innsending så skal siden tilbakestilles til normaltilstanden, og det skal komme et pop-up vindu som sier at innsendingen er mottatt. Det skal også være en grået bakgrunn for å fremheve pop-up vinduet.</p>
 
+    </div>
+    <div>
+        <header>
+            <h2>
+                Plan
+            </h2>
+        </header>
+        <p>Den følgende organisatoriske planen viser hovedpunktene av hva vi skal lage. Merk at vi vet foreløpig ikke hvor mange bilder vi skal hente til vårt galleri så vi har satt en tentativ liste på 30 bilder. Dette kan endres. Filmappene og filene er logisk delt inn og det er satt av personer til de ulike oppgavene med en foreløpig frist for hver oppgave.</p>
+        <header>
+            <h4>Organisasjonsskjema</h4>
+        </header>
+        <ul>
+            <li>hjemmeside.html</li>
+            <li>bestill_time.html</li>
+            <li>behandlinger.html</li>
+            <li>om_oss</li>
+            <li>søk_jobb</li>
+            <li>galleri</li>
+            <li>covid_19.html</li>
+            <li>images/
+                <ul>
+                    <li>favicon.png</li>
+                    <li>logo.png</li>
+                    <li>bakgrunnsbilde_1.png</li>
+                    <li>bakgrunnsbilde_2.png</li>
+                    <li>bakgrunnsbilde_3.png</li>
+                    <li>bakgrunnsbilde_4.png</li>
+                    <li>bakgrunnsbilde_5.png</li>
+                    <li>bestill_time.png</li>
+                    <li>behandlinger.png</li>
+                    <li>klipp.png</li>
+                    <li>farge.png</li>
+                    <li>skjegg.png</li>
+                    <li>andre_behandlinger.png</li>
+                    <li>om_oss.png</li>
+                    <li>johanns_haar.png</li>
+                    <li>ansatt_1.png</li>
+                    <li>ansatt_2.png</li>
+                    <li>ansatt_3.png</li>
+                    <li>...</li>
+                    <li>ansatt_6.png</li>
+                    <li>søk_jobb.png</li>
+                    <li>galleri.png</li>
+                    <li>galleri_1.png</li>
+                    <li>galleri_2.png</li>
+                    <li>galleri_3.png</li>
+                    <li>...</li>
+                    <li>galleri_30.png</li>
+                </ul>
+            </li>
+            <li>modularity/
+                <ul>
+                    <li>menybar</li>
+                    <li>footer</li>
+                </ul>  
+            </li>
+            <li>css/
+                <ul>
+                    <li>style.css</li>
+                </ul>
+            </li>
+            <li>scripts/
+                <ul>
+                    <li>priskalkulator.js</li>
+                    <li>image_size.js</li>
+                    <li>bestillingsbekreftelse.js</li>
+                    <li>søknadsbekreftelse.js</li>
+                    <li>random_images.js</li>
+                </ul>
+            </li>
+            <li>JavaScript
+                <ul>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Jquery</li>
+                    <li>AngularJS</li>
+                    <li>Blackbone</li>
+                    <li>Ember</li>
+                    <li>Babel</li>
+                </ul>
+            </li>
+        </ul>
+        <header>
+            <h4>Arbeidsfordeling og frist</h4>
+        </header>
+        <table>
+            <tr>
+                <th>Filnavn</th>
+                <th>Beskrivelse</th>
+                <th>Ansvarlig</th>
+                <th>Frist</th>
+            </tr>
+            <tr>
+                <td>hjemmeside.html</td>
+                <td>Hovedside med bestill time knapp og tilfeldige bilder bak.</td>
+                <td>Maja</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>bestill_time.html</td>
+                <td>Side med timebestilling og live priskalkulator. Bekreftelse når man har bestilt.</td>
+                <td>Maja</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>om_oss.html</td>
+                <td>Side med kort historie om kjeden, oversikt over ansatte og lokasjoner.</td>
+                <td>Oda</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>søk_jobb.html</td>
+                <td>Levere inn CV og skrive inn søknad.</td>
+                <td>Oda</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>galleri.html</td>
+                <td>Galleri med bilder av forskjellige frisyrer og farger. Thumbnails blir store bilder.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>behandlinger.html</td>
+                <td>Oversikt over forskjellige behandlinger med beskrivelser og priser.</td>
+                <td>Philip</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>covid_19.html</td>
+                <td>Informasjon om COVID-19 og hvordan KLPP. forholder seg til situasjonen.</td>
+                <td>Sven</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>logo.png</td>
+                <td>Må lage en logo for KLPP.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>favicon.png</td>
+                <td>Må lage en favicon som er K.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>menybar</td>
+                <td>Lage en felles modular menybar som brukes til alle sidene.</td>
+                <td>Maja</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>footer</td>
+                <td>lage en felles modular footer som brukes til alle sidene.</td>
+                <td>Philip</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>random_images.js</td>
+                <td>JavaScript som lar forsiden rotere mellom tilfeldige bakgrunnsbilder.</td>
+                <td>Philip</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>priskalkulator.js</td>
+                <td>JavaScript som gjør det mulig å kalkulere totalprisen når man bestiller.</td>
+                <td>Oda</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>image_size.js</td>
+                <td>JavaScript som gjør at man får fullsize bilder når man trykker på thumbnails i galleri.</td>
+                <td>Dag</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>bestillingsbekreftelse.js</td>
+                <td>JavaScript som gir deg en bekreftelse når du har bestilt en time.</td>
+                <td>Sven</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>Søknadsbekreftelse.js</td>
+                <td>JavaScript som gir deg en bekreftelse når du har sendt søknad.</td>
+                <td>Sven</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>style.css</td>
+                <td>Å style alle html-sidene vil være noe alle må bidra med.</td>
+                <td>Alle</td>
+                <td>23.10.2020</td>
+              </tr>
+        </table>
+    </div>
     <footer>
         Oda Tillman, Sven Herman Holmsen, Maja Meland, Philip Tinius Hansen Crome, Dag Hara 
     </footer>

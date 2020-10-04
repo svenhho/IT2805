@@ -1,10 +1,10 @@
 * {
-    background-color: #eeeeee
+    background-color: #ebebeb
 
 }
 
 body, div, header{
-    max-width: 700px;
+    max-width: 800px;
     line-height: 1.4;
     text-align: justify;
     margin: auto;
@@ -30,4 +30,13 @@ footer {
 
 table, th, td {
     border: 1px solid #454545;
+}
+
+
+#Johannes {
+    width: 130px;
+    float: right;  
+    margin: 30%;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }

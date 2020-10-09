@@ -15,7 +15,18 @@ body{
 
 .meny a{
     margin-left: 20px;
+    text-decoration: none;
+    color: black;
 }
+
+.meny a:hover{
+    color: rgb(221, 224, 218);
+}
+
+.active a{
+    color: rgb(244, 148, 30);
+}
+
 
 .wrapper-inside{
     padding-bottom: 100px;
@@ -26,8 +37,22 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
+.behandling_right{
+    margin-left: 50%;
+}
+
+.behandling_left{
+    margin-right: 50%;
+}
+
 .foot{
     height: 100px;
     margin-top: -100px;
-    background-color:rgb(205, 223, 245)
+    padding: 20px;
+    background-color:rgb(205, 223, 245);
+
 }

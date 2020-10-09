@@ -6,6 +6,17 @@ body{
     min-height: 100%;
 }
 
+.meny{
+    padding: 50px;
+    border-bottom: solid 2px black;
+    overflow: hidden;
+
+}
+
+.meny a{
+    margin-left: 20px;
+}
+
 .wrapper-inside{
     padding-bottom: 100px;
 }

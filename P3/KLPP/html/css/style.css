@@ -1,0 +1,294 @@
+/* UNIVERSELL STIL:  */
+
+body{
+    font-family:  Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+h1{
+    color: rgb(244, 148, 30);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h4 {
+    color: rgb(244, 148, 30);
+}
+
+
+/* MENYGREIER: */
+
+#menyboks{
+    width: 100%;
+    border-bottom: solid 2px black;
+}
+
+
+.meny{
+    padding: 50px;
+    overflow: hidden;
+    text-align: right;
+    
+
+}
+
+
+.meny a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#aktiv{
+    color: rgb(244, 148, 30);
+    
+    /* endrer fargen på menyobjektet man er inne på til oransje */
+}
+
+.meny a:hover{
+    color: rgb(221, 224, 218);
+    /* endrer dargen til menyobjektene til grå når man har musen over dem */
+}
+
+
+/* BEHANDLINGER.HTML */
+
+
+.behandling_right{
+    margin-left: 50%;
+    padding: 7%;
+}
+
+.behandling_left{
+    margin-right: 50%;
+    padding: 7%;
+}
+
+/* FOOTER GREIER: */
+
+.wrapper{
+    min-height: 100%;
+}
+.wrapper-inside{
+    padding-bottom: 250px;
+}
+
+.foot{
+    height: 250px;
+    margin-top: -250px;
+    padding: 10px;
+    background-color:rgb(205, 223, 245);
+
+}
+
+#kontakt{
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: solid gray 2px;
+}
+
+.kontaktlokasjon{
+    width: 27%;
+    float: left;
+    
+}
+
+#so_me{
+    width: 18%;
+    height: 80%;
+    float: left;
+    border-left: solid gray 2px;
+}
+
+/* OM OSS */
+.Bakgrunn {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Overskrift {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#ansatt_bilder {
+    height: 450px;
+    position: relative;
+    margin: auto;
+    max-width: 70%;
+}
+#ansatt1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+} 
+
+#ansatt2 {
+    position: absolute;
+    left: 28%;
+    top: 0%;
+} 
+
+#ansatt3 {
+    position: absolute;
+    right: 28%;
+    top: 0%;
+} 
+
+#ansatt4 {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+} 
+
+#ansatt5 {
+    position: absolute;
+    left: 14%;
+    bottom: 0%;
+} 
+
+#ansatt6 {
+    position: absolute;
+    left: 42%;
+    bottom: 0%;
+}
+
+#ansatt7 {
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+} 
+
+#Johannes {
+    float: right;  
+    margin-left: 4%;
+}
+
+#ansatte, #om_oss_intro {
+    margin: auto;
+    width: 960px;
+}
+
+#salonger, .søk_jobb{
+    margin: auto;
+    width: 700px;
+}
+
+#om_oss_intro p {
+    margin-top: 50px;
+    text-align: left;
+}
+
+#map {
+    text-align: center;
+}
+
+/* SØK JOBB */
+input[type=text] {
+    width: 30%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+
+input[type=email] {
+    width: 30%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+
+input[type=number] {
+    width: 30%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+
+#søknad {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    background-color: rgb(221,224,218);
+    border: solid 1.5px;
+    padding: 12px 20px;
+}
+
+#fyll_inn {
+    height: 450px;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+#fornavn {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#etternavn {
+    position: absolute;
+    right: 30%;
+    top: 0%;
+}
+
+#e-mail {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+}
+
+#telefon {
+    position: absolute;
+    right: 30%;
+    top: 15%;
+}
+
+#cven {
+    position: absolute;
+    left: 0%;
+    top: 28%;
+}
+
+#søk {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    width: 100%;
+}
+
+#send {
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+    width: 20%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    border: solid 1.5px;
+    padding: 12px 20px;
+    color: white;
+}

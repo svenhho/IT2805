@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>KLPP.</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="Bakgrunn">
+            <img src="images/Bakgrunn.jpg" width="100%">
+            <h1 class="Overskrift">SØK JOBB</h1>
+        </header>
+        <article>
+            <div class="søk_jobb">
+                <p>Vi har veldig nylig åpnet tre frisørsalonger i Trondheim og er på utkikk etter flere ansatte. Føler du at kvalifikasjonene under beskriver deg, send gjerne inn en søknad.
+                </p>
+                <p><b>Ønskede kvalifikasjoner:</b></p>
+                <ul>
+                    <li>Engasjert og initiativrik</li>
+                    <li>Punktlig og pålitelig</li>
+                    <li>Kreativ og løsningsorientert</li>
+                    <li>Fleksible</li>
+                    <li>Omsorgsfull</li>
+                    <li>Gode kommunikasjonsevner, med kunder og andre ansatte</li>
+                    <li>Gode språkferdigheter, både norsk og engelsk</li>
+                    <li>Erfaring fra liknende arbeid</li>
+                    <li>Relevant utdanning som frisør</li>
+                    <li>100% stilling</li>
+                </ul>
+            </div>
+            <div class="søk_jobb">
+                <form id="fyll_inn">
+                    <div id="fornavn">
+                        <label for="fnavn">FORNAVN</label><br>
+                        <input type="text" id="fnavn" name="fnavn" required>
+                    </div>
+
+                    <div id="etternavn">
+                        <label for="enavn">ETTERNAVN</label><br>
+                        <input type="text" id="enavn" name="enavn" required>
+                    </div>
+
+                    <div id="e-mail">
+                        <label for="email">E-MAIL</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div id="telefon">
+                        <label for="tlf">TELEFON</label><br>
+                        <input type="number" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    
+                    <div id="cven">
+                        <label for="CV" class="custom-file-upload">LEGG TIL FIL</label><br>
+                        <input type="file" id="CV" name="CV" size="60" multiple>
+                    </div>
+                    
+                    <div id="søk">
+                        <label for="søknad">DIN SØKNAD</label><br>
+                        <textarea id="søknad" name="søknad" rows="4" cols="50"></textarea> 
+                    </div>
+
+                    <input type="submit" value="SEND" id="send">
+                </form>
+            </div>
+        </article>
+    </body>
+</html>

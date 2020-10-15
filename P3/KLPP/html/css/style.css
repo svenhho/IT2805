@@ -3,6 +3,7 @@
 body{
     font-family:  Helvetica, Arial, sans-serif;
     margin: 0px;
+    background-color: #fefefe;
 }
 
 h1{
@@ -30,7 +31,7 @@ h4 {
 .meny{
     padding: 50px;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
     
 
 }
@@ -109,7 +110,7 @@ h4 {
 .Bakgrunn {
     position: relative;
     text-align: center;
-    color: white;
+    color:#fefefe;
 }
 
 .Overskrift {
@@ -291,4 +292,42 @@ input[type="file"] {
     border: solid 1.5px;
     padding: 12px 20px;
     color: white;
+}
+
+/* COVID-19*/
+#covidcolor{
+    background-color:  rgb(253, 212, 158);
+}
+
+#fonting {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+#menyboks{
+    background-color: #fefefe;
+}
+
+section header h1{
+    color: black;
+}
+
+#important{
+    text-align: justify;
+    font-size: 1.4em;
+    color: black;
+}
+
+#oppdatering {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    margin-top: -1.5em;
+}
+
+section ul{
+    
+    line-height: 1.5em;
 }

@@ -241,7 +241,6 @@ input[type="file"] {
 }
 
 #fyll_inn {
-    height: 450px;
     position: relative;
     margin: auto;
     max-width: 100%;

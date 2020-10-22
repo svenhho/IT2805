@@ -15,11 +15,6 @@ h2{
     text-align: center;
 }
 
-h4 {
-    color: rgb(244, 148, 30);
-}
-
-
 /* MENYGREIER: */
 
 #menyboks{
@@ -34,8 +29,6 @@ h4 {
     padding: 50px;
     overflow: hidden;
     text-align: center;
-    
-
 }
 
 
@@ -208,6 +201,7 @@ h4 {
     position: relative;
     text-align: center;
     color: white;
+    max-width: 100%;
 }
 
 .Overskrift {
@@ -271,13 +265,17 @@ h4 {
 }
 
 #ansatte, #om_oss_intro {
-    margin: auto;
-    width: 960px;
+    width: 72%;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-#salonger, .søk_jobb, .bestill_time{
-    margin: auto;
-    width: 700px;
+#salonger, .søk_jobb, .bestill_time {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #om_oss_intro p {
@@ -289,9 +287,31 @@ h4 {
     text-align: center;
 }
 
+h4 #solsiden {
+    color: #cddff5;
+}
+
+h4 #lade {
+    color: #f4941e;
+}
+
+h4 #tiller {
+    color: #fdd49e;
+}
+
+
 /* SØK JOBB */
-input[type=text], input[type=email], input[type=number], #salongene select, input[type="date"], #behandlingene select, #frisør select  {
-    width: 200px;
+input[type=text], input[type=email], input[type=number] {
+    width: 250px;
+    border-radius: 10px;
+    height: 30px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+
+#salongene select, input[type="date"], #behandlingene select, #frisør select {
+    width: 250px;
     border-radius: 10px;
     box-sizing: border-box;
     border-color: black;
@@ -313,17 +333,18 @@ input[type="file"] {
     width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
-    border-color: black;
-    background-color: rgb(221,224,218);
+    background-color: #f4941f;
     border: solid 1.5px;
     padding: 12px 20px;
+    color: black;
 }
 
 #fyll_inn {
-    height: 450px;
+    height: 550px;
     position: relative;
-    margin: auto;
     max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #fornavn {
@@ -359,21 +380,21 @@ input[type="file"] {
 #søk {
     position: absolute;
     left: 0%;
-    top: 40%;
+    top: 50%;
     width: 100%;
 }
 
 #send {
     position: absolute;
-    left: 40%;
+    left: 0%;
     bottom: 0%;
-    width: 20%;
+    width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
-    background-color: black;
+    border-color: black;
+    background-color: rgb(221,224,218);
     border: solid 1.5px;
     padding: 12px 20px;
-    color: white;
 }
 
 /* BESTILL TIME */
@@ -383,21 +404,17 @@ input[type="file"] {
     top: 30%;
 }
 
-#fyll_inn{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 #kalender {
     position: absolute;
-    right: 0%;
-    top: 30%;
+    left: 0%;
+    top: 45%;
 }
 
 #behandlingene {
     position: absolute;
-    left: 0%;
-    top: 45%;
+    right:0%;
+    top: 30%;
+    z-index: 3;
 }
 
 #checkBoxes{

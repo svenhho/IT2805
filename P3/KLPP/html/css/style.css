@@ -25,6 +25,8 @@ h4 {
 #menyboks{
     width: 100%;
     border-bottom: solid 2px black;
+    position: fixed;
+    z-index: 40;
 }
 
 
@@ -167,6 +169,7 @@ h4 {
 
 .wrapper{
     min-height: 100%;
+    padding-top: 115px;
 }
 .wrapper-inside{
     padding-bottom: 250px;
@@ -378,6 +381,11 @@ input[type="file"] {
     position: absolute;
     left: 0%;
     top: 30%;
+}
+
+#fyll_inn{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #kalender {

@@ -140,6 +140,8 @@ h4 {
 .behandling_right{
     margin-left: 50%;
     padding: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .behandling_bilde_left{
@@ -148,8 +150,11 @@ h4 {
 }
 
 .behandling_left{
-    margin-right: 50%;
+    width: 36%;
     padding: 7%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .behandling_bilde_right{

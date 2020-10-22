@@ -55,18 +55,107 @@ h4 {
     /* endrer dargen til menyobjektene til grå når man har musen over dem */
 }
 
+/* HJEMMESIDE.html */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Gjemmer bildene: */
+.mySlides {
+    display: none;
+}
+
+/* Styling av dots som lar deg velge bilde */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fade mellom bilder */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
 
 /* BEHANDLINGER.HTML */
 
+#behandling_topp{
+    margin-bottom: 100px;
+    height: 350px;
+}
+
+#behandling_bilde_top{
+    width: 100%;
+}
+
+#behandling_overskrift{
+    position: absolute;
+    width: 100%;
+    top: 320px;
+
+}
+
+.behandling_tittel{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 0%;
+    
+}
+
+.behandling_boks{
+    overflow: hidden;
+}
 
 .behandling_right{
     margin-left: 50%;
     padding: 7%;
 }
 
+.behandling_bilde_left{
+    width: 50%;
+    float: left;
+}
+
 .behandling_left{
     margin-right: 50%;
     padding: 7%;
+}
+
+.behandling_bilde_right{
+    width: 50%;
+    float: right;
+
 }
 
 /* FOOTER GREIER: */

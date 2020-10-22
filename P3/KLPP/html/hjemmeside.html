@@ -9,29 +9,69 @@
 </head>
 
 <body>
-    <div class="meny">
-        <div class="menyboks">
-            <a href="hjem">KLPP.</a>
-            <a href="bestill">BESTILL TIME</a>
-            <a href="behandlinger">BEHANDLINGER</a>
-            <a href="om_oss">OM OSS</a>
-            <a href="sok_jobb">SØK JOBB</a>
-            <a href="galleri">GALLERI</a>
-            <a href="COVID">COVID-19</a>
+    <div id="menyboks">
+        <div class="meny">
+            <a href="bestill_time.html">BESTILL TIME</a>
+            <a href="behandlinger.html">BEHANDLINGER</a>
+            <a href="om_oss.html">OM OSS</a>
+            <a href="sok_jobb.html">SØK JOBB</a>
+            <a href="galleri.html">GALLERI</a>
+            <a href="covid_19.html">COVID-19</a>
         </div>
     </div>
+
     <div class="wrapper">
         <div class="wrapper-inside">
-            <div id="hjem_body">
-                <img src="" alt="hjembilde_1">
-                <img src="" alt="hjembilde_2">
-                <img src="" alt="hjembilde_3">
-                <img src="" alt="hjembilde_4">
-                <img src="" alt="hjembilde_5">
+            <div id="slideshow_container">
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_1.png" alt="hjembilde_1" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_2.jpg" alt="hjembilde_2" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_3.jpg" alt="hjembilde_3" style="width: 100%;">
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
 
                 <div id="bestill_knapp">
-                    <a href="bestill">BESTILL TIME</a>
+                    <a href="bestill_time.html">BESTILL TIME</a>
                 </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                    }
+                </script>
             </div>
         </div>
     </div>

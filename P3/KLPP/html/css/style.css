@@ -15,6 +15,9 @@ h2{
     text-align: center;
 }
 
+h4{
+    color: rgb(244, 148, 30);
+}
 /* MENYGREIER: */
 
 #menyboks{
@@ -283,22 +286,25 @@ h2{
     text-align: left;
 }
 
+#salonger {
+    height: 400px;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
 #map {
-    text-align: center;
-}
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    width: 50%;
+} 
 
-h4 #solsiden {
-    color: #cddff5;
+#salong_tekst {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    width: 40%;
 }
-
-h4 #lade {
-    color: #f4941e;
-}
-
-h4 #tiller {
-    color: #fdd49e;
-}
-
 
 /* SØK JOBB */
 input[type=text], input[type=email], input[type=number] {

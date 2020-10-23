@@ -65,7 +65,8 @@
                             <div id="cven">
                                 <label>CV</label><br><br>
                                 <label for="CV" class="custom-file-upload">LEGG TIL FIL</label><br>
-                                <input type="file" id="CV" name="CV" size="60" multiple>
+                                <input type="file" id="CV" name="CV" size="60" multiple onclick="document.getElementById('cv_text').innerHTML = 'cv.docx';">
+                                <div id="cv_tekst"></div>
                             </div>
                             
                             <div id="søk">

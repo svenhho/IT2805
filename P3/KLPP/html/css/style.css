@@ -28,7 +28,7 @@ h4{
 }
 
 
-.meny{
+#meny{
     padding: 50px;
     overflow: hidden;
     text-align: center;
@@ -316,7 +316,7 @@ input[type=text], input[type=email], input[type=number] {
     border: solid 1.5px;
 }
 
-#salongene select, input[type="date"], #behandlingene select, #frisør select {
+#salongene select, input[type="datetime-local"], #behandlingene select, #frisør select {
     width: 250px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -412,7 +412,7 @@ input[type="file"] {
 
 #kalender {
     position: absolute;
-    left: 0%;
+    right: 0%;
     top: 45%;
 }
 
@@ -430,7 +430,7 @@ input[type="file"] {
 
 #frisør {
     position: absolute;
-    right:0%;
+    left:0%;
     top: 45%;
 }
 

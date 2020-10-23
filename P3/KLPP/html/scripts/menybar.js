@@ -1,4 +1,28 @@
-function oversikten(){
+const menyboks = document.getElementById("menyboks");
+const meny = document.createElement("div");
+meny.id = "meny";
+menyboks.appendChild(meny);
+
+
+function menybar() {
+    const bestill_time = document.createElement("a");
+    const bestill_time_text = document.createTextNode("BESTILL TIME");
+    bestill_time.href= "bestill_time.html";
+    bestill_time.appendChild(bestill_time_text);
+    meny.appendChild(bestill_time);
+
+    const behandlinger = document.createElement("a");
+    const behanlinger_text = document.createTextNode("BEHANDLINGER");
+    behandlinger.href= "behandlinger.html";
+    behandlinger.appendChild(behanlinger_text);
+    meny.appendChild(behandlinger);
+}
+
+menybar()
+
+
+/*
+function oversikten() {
     let container = document.createElement("div")
     container.className = "menyboks"
     //let container = document.getElementsByClassName("meny")
@@ -22,7 +46,7 @@ function oversikten(){
     div.appendChild(søkJobb)
     div.appendChild(galleri)
     div.appendChild(covid)
-*/
+
     let bes = document.createElement('a');
     let beh = document.createElement('a');
     let oms = document.createElement('a');
@@ -79,3 +103,4 @@ function oversikten(){
 
 }
 oversikten()           
+*/

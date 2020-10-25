@@ -15,6 +15,10 @@ h2{
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 h4{
     color: rgb(244, 148, 30);
 }
@@ -73,6 +77,7 @@ h4{
 /* Gjemmer bildene: */
 .mySlides {
     display: none;
+    text-align: center;
 }
 
 /* Styling av dots som lar deg velge bilde */
@@ -128,7 +133,7 @@ h4{
     border:5px solid rgb(244, 148, 30); 
     background-color: black;
     opacity: 0.5;
-    
+
 }
 
 #bestill_knapp a{
@@ -205,7 +210,7 @@ h4{
     padding-top: 115px;
 }
 .wrapper-inside{
-    padding-bottom: 370px;
+    padding-bottom: 250px;
 }
 
 #foot{
@@ -341,7 +346,7 @@ h4{
 }
 
 #salonger {
-    height: 400px;
+    height: 550px;
     position: relative;
     margin: auto;
     max-width: 100%;
@@ -349,14 +354,14 @@ h4{
 #map {
     position: absolute;
     left: 0%;
-    top: 20%;
+    top: 13%;
     width: 50%;
 } 
 
 #salong_tekst {
     position: absolute;
     right: 0%;
-    top: 10%;
+    top: 5%;
     width: 40%;
 }
 

@@ -4,7 +4,7 @@ meny.id = "meny";
 menyboks.appendChild(meny);
 
 /*const klpp_div = document.createElement("div");
-klpp_div.id = "klpp_div"
+klpp_div.id = "klpp_div";
 menyboks.appendChild(klpp_div);*/
 
 

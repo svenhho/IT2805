@@ -112,6 +112,36 @@ h4{
   }
   
 
+#slideshow_inside {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+}
+
+#bestill_knapp {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 50px;
+    width: 280px;
+    transform: translate(-50%, -50%);
+    border:5px solid rgb(244, 148, 30); 
+    background-color: black;
+    opacity: 0.5;
+    
+}
+
+#bestill_knapp a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(244, 148, 30);
+    font-size: 30px;
+}
+
+#bestill_knapp a:hover{
+    color: rgb(221, 224, 218);
+}
+
 /* BEHANDLINGER.HTML */
 
 #behandling_topp{

@@ -25,17 +25,24 @@ h4{
     border-bottom: solid 2px black;
     position: fixed;
     z-index: 40;
+    background-color: white;
 }
 
 
 #meny{
     padding: 50px;
     overflow: hidden;
-    text-align: center;
+    font-family: helvetica;
+    font-size: 16px;
+    margin-left: 25%;
 }
 
+#meny #klpp {
+    font-size: 50px;
+    margin-left: 0%;
+}
 
-.meny a{
+#meny a{
     margin-left: 40px;
     text-decoration: none;
     color: black;
@@ -48,7 +55,7 @@ h4{
     /* endrer fargen på menyobjektet man er inne på til oransje */
 }
 
-.meny a:hover{
+#meny a:hover{
     color: rgb(221, 224, 218);
     /* endrer dargen til menyobjektene til grå når man har musen over dem */
 }
@@ -168,15 +175,14 @@ h4{
     padding-top: 115px;
 }
 .wrapper-inside{
-    padding-bottom: 250px;
+    padding-bottom: 370px;
 }
 
-.foot{
+#foot{
     height: 250px;
     margin-top: -250px;
     padding: 10px;
     background-color:rgb(205, 223, 245);
-
 }
 
 #kontakt{
@@ -197,6 +203,24 @@ h4{
     height: 80%;
     float: left;
     border-left: solid gray 2px;
+}
+
+#insta, #face {
+    text-align: center;
+}
+
+#instagram, #facebook {
+    height: 50px;
+}
+
+#foot h4 {
+    color: black;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+#foot h4 #kontakt {
+    font-size: 22px;
 }
 
 /* OM OSS */

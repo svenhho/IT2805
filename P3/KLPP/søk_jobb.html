@@ -66,13 +66,21 @@
                                 <textarea id="søknad" name="søknad" rows="4" cols="50"></textarea> 
                             </div>
 
-                            <input type="submit" value="SEND" id="send">
-                        </form>
+                            <button type="submit" value="SEND" id="send" onclick="giveFeedback()">SEND</button>
+                    </form>
+                </div>
+                <div id="userFeedback-jobb" class="feedback-jobb">
+                    <div class="feedback-content-jobb">
+                        <span class="close-jobb" onclick="closingWindow()">&times;</span>
+                        <p style="color: rgb(0,0,0); font-size: x-large;">SØKNADEN ER SENDT</p>
+                        <p>Takk for din søknad</p>
                     </div>
-                </article>
+                </div>
+            </article>
             </div>
         </div>
         <footer id="foot"></footer>
         <script src="modularity/footer.js"></script>
+        <script src="scripts/søknadsbekreftelse.js"></script>
     </body>
 </html>

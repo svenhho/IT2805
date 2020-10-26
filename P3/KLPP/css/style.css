@@ -463,10 +463,10 @@ input[type="file"] {
     color: white;
 }
 
-.feedback-jobb{
+.feedback-all{
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
@@ -476,7 +476,7 @@ input[type="file"] {
     background-color: rgba(0,0,0,0.4);
 }
 
-.feedback-content-jobb{
+.feedback-content{
     background-color: rgb(255, 255, 255);
     margin: 15% auto;
     padding: 40px;
@@ -487,14 +487,14 @@ input[type="file"] {
     color: rgb(0,0,0); 
 }
 
-.close-jobb{
+.close-window{
     color:rgb(221, 224, 218);
     float: right;
     font-size: 40px;
     font-weight: bold;
 }
 
-.close-jobb:hover, .close-jobb:focus{
+.close-window:hover, .close-window:focus{
     color: rgb(0,0,0);
     text-decoration: none;
     cursor: pointer;

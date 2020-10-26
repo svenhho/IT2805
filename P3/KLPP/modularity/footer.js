@@ -110,7 +110,7 @@ function footer() {
     const insta_bilde = document.createElement("img");
     const insta_tekst = document.createElement("p");
     const insta_teksten = document.createTextNode("instagram.com/klpp")
-    insta_bilde.src = "images/Insta.png";
+    insta_bilde.src = "images/instagram_logo.svg";
     insta_bilde.id = "instagram"
     insta_tekst.appendChild(insta_teksten);
     insta.appendChild(insta_bilde);
@@ -122,7 +122,7 @@ function footer() {
     const face_bilde = document.createElement("img");
     const face_tekst = document.createElement("p");
     const face_teksten = document.createTextNode("facebook.com/klpp")
-    face_bilde.src = "images/face.png";
+    face_bilde.src = "images/facebook_logo.svg";
     face_bilde.id = "facebook"
     face_tekst.appendChild(face_teksten);
     face.appendChild(face_bilde);

@@ -50,7 +50,7 @@ function menybar() {
     const covid_19_tekst = document.createTextNode("COVID-19");
     covid_19.href= "covid_19.html";
     covid_19.appendChild(covid_19_tekst);
-    meny.appendChild(covid_1);
+    meny.appendChild(covid_19);
 }
 
 

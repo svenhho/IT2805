@@ -16,7 +16,7 @@
         <h1 class="Overskrift">BESTILL TIME</h1>
       </header>
       <article class="bestill_time">
-        <form id="fyll_inn">
+        <form id="fyll_inn" onsubmit="return false">
           <div id="fornavn">
             <label for="fnavn">FORNAVN</label><br>
             <input type="text" id="fnavn" name="fnavn" required>
@@ -156,15 +156,22 @@
             <input type="checkbox" name="checkbox" value="check" id="agree" required />Jeg har lest og godtar vilkårene for <a href= "covid_19.html">Covid-19</a><br>
           </div>
 
-        <input type="submit" value="SEND" id="send">
-      
-            
-        </form>  
+          <button type="submit" value="SEND" id="send" onclick="giveResponse()">SEND</button> 
+        </form>
+        
+        <div id="userFeedback" class="feedback-all">
+          <div class="feedback-content">
+              <span class="close-window" onclick="closingWindow()">&times;</span>
+              <p style="font-size: x-large;">BESTILLING BEKREFTET</p>
+              <p>Takk for din bestilling</p>
+          </div>
+      </div>
       </article>
     </div>
   </div>
   <footer id="foot"></footer>
   <script src="modularity/footer.js"></script>
   <script src="scripts/priskalkulator.js"></script>
+  <script src="scripts/bekreftelse.js"></script>
 </body>
 </html>

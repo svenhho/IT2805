@@ -462,7 +462,7 @@ input[type="file"] {
     padding: 12px 20px;
     color: white;
 }
-
+/*feedback vinduene*/
 .feedback-all{
     display: none;
     position: fixed;

@@ -363,77 +363,6 @@ h4{
     width: 40%;
 }
 
-@media (max-width: 1000px) {
-    #ansatt_bilder {
-        height: 900px;
-        position: relative;
-        margin: auto;
-        max-width: 70%;
-        overflow: hidden;
-    }
-    #ansatt1 {
-        position: absolute;
-        left: 20%;
-        top: 0%;
-    } 
-    
-    #ansatt2 {
-        position: absolute;
-        left: 60%;
-        top: 0%;
-    } 
-    
-    #ansatt3 {
-        position: absolute;
-        left: 20%;
-        top: 25%;
-    } 
-    
-    #ansatt4 {
-        position: absolute;
-        left: 60%;
-        top: 25%;
-    } 
-    
-    #ansatt5 {
-        position: absolute;
-        left: 20%;
-        top: 50%;
-    } 
-    
-    #ansatt6 {
-        position: absolute;
-        left: 60%;
-        top: 50%;
-    }
-    
-    #ansatt7 {
-        position: absolute;
-        left: 40%;
-        top: 75%;
-    } 
-
-    #salonger {
-        height: 1000px;
-        position: relative;
-        margin: auto;
-        max-width: 100%;
-    }
-    #map {
-        position: absolute;
-        left: 0%;
-        top: 5%;
-        width: 100%;
-    } 
-    
-    #salong_tekst {
-        position: absolute;
-        left: 0%;
-        top: 45%;
-        width: 100%;
-    }
-}
-
 /* SØK JOBB */
 input[type=text], input[type=email], input[type=number] {
     width: 300px;
@@ -508,7 +437,7 @@ input[type="file"] {
 
 #cven {
     position: absolute;
-    left: 0%;
+    left: 40%;
     top: 28%;
 }
 
@@ -791,3 +720,170 @@ section ul{
     }
     }
 
+
+/* Tilpasset mindre skjerm */
+
+@media (max-width: 1000px) {
+    #ansatt_bilder {
+        height: 900px;
+        position: relative;
+        margin: auto;
+        max-width: 70%;
+        overflow: hidden;
+    }
+    #ansatt1 {
+        position: absolute;
+        left: 20%;
+        top: 0%;
+    } 
+    
+    #ansatt2 {
+        position: absolute;
+        left: 60%;
+        top: 0%;
+    } 
+    
+    #ansatt3 {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+    } 
+    
+    #ansatt4 {
+        position: absolute;
+        left: 60%;
+        top: 25%;
+    } 
+    
+    #ansatt5 {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    } 
+    
+    #ansatt6 {
+        position: absolute;
+        left: 60%;
+        top: 50%;
+    }
+    
+    #ansatt7 {
+        position: absolute;
+        left: 40%;
+        top: 75%;
+    } 
+
+    #salonger {
+        height: 1000px;
+        position: relative;
+        margin: auto;
+        max-width: 100%;
+    }
+    #map {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 100%;
+    } 
+}
+    
+@media (max-width: 1050px) {
+    #salong_tekst {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+        width: 100%;
+    }
+
+    #fyll_inn {
+        height: 700px;
+        position: relative;
+        max-width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    #fornavn {
+        position: absolute;
+        left: 25%;
+        top: 0%;
+    }
+    
+    #etternavn {
+        position: absolute;
+        left: 25%;
+        top: 10%;
+    }
+    
+    #e-mail {
+        position: absolute;
+        left: 25%;
+        top: 20%;
+    }
+    
+    #telefon {
+        position: absolute;
+        left: 25%;
+        top: 30%;
+    }
+    
+    #cven {
+        position: absolute;
+        left: 38%;
+        top: 40%;
+    }
+    
+    #søk {
+        position: absolute;
+        left: 0%;
+        top: 55%;
+        width: 100%;
+    }
+    
+    #send {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border-color: black;
+        background-color: rgb(221,224,218);
+        border: solid 1.5px;
+        padding: 12px 20px;
+        font-size: 17px;
+    }
+
+    #salongene {
+        position: absolute;
+        left: 25%;
+        top: 40%;
+    }
+
+    #behandlingene {
+        position: absolute;
+        left:25%;
+        top: 50%;
+        z-index: 3;
+    }
+
+    #frisør {
+        position: absolute;
+        left: 25%;
+        top: 60%;
+    }
+    
+    #kalender {
+        position: absolute;
+        left: 25%;
+        top: 70%;
+    }
+    
+    #covidd {
+        position: absolute;
+        left:0%;   
+        top: 85%;
+    }
+
+    
+}

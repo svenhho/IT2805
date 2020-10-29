@@ -270,6 +270,11 @@ h4{
     margin: auto;
     max-width: 70%;
 }
+
+#ansatt_text {
+    text-align: center;
+}
+
 #ansatt1 {
     position: absolute;
     left: 0%;
@@ -284,13 +289,13 @@ h4{
 
 #ansatt3 {
     position: absolute;
-    right: 28%;
+    left: 55%;
     top: 0%;
 } 
 
 #ansatt4 {
     position: absolute;
-    right: 0%;
+    left: 83%;
     top: 0%;
 } 
 
@@ -302,13 +307,13 @@ h4{
 
 #ansatt6 {
     position: absolute;
-    left: 42%;
+    left: 41%;
     bottom: 0%;
 }
 
 #ansatt7 {
     position: absolute;
-    right: 10%;
+    left: 68%;
     bottom: 0%;
 } 
 
@@ -329,6 +334,8 @@ h4{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #om_oss_intro p {
@@ -337,7 +344,7 @@ h4{
 }
 
 #salonger {
-    height: 550px;
+    height: 600px;
     position: relative;
     margin: auto;
     max-width: 100%;
@@ -354,6 +361,77 @@ h4{
     right: 0%;
     top: 5%;
     width: 40%;
+}
+
+@media (max-width: 1000px) {
+    #ansatt_bilder {
+        height: 900px;
+        position: relative;
+        margin: auto;
+        max-width: 70%;
+        overflow: hidden;
+    }
+    #ansatt1 {
+        position: absolute;
+        left: 20%;
+        top: 0%;
+    } 
+    
+    #ansatt2 {
+        position: absolute;
+        left: 60%;
+        top: 0%;
+    } 
+    
+    #ansatt3 {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+    } 
+    
+    #ansatt4 {
+        position: absolute;
+        left: 60%;
+        top: 25%;
+    } 
+    
+    #ansatt5 {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    } 
+    
+    #ansatt6 {
+        position: absolute;
+        left: 60%;
+        top: 50%;
+    }
+    
+    #ansatt7 {
+        position: absolute;
+        left: 40%;
+        top: 75%;
+    } 
+
+    #salonger {
+        height: 1000px;
+        position: relative;
+        margin: auto;
+        max-width: 100%;
+    }
+    #map {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 100%;
+    } 
+    
+    #salong_tekst {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+        width: 100%;
+    }
 }
 
 /* SØK JOBB */

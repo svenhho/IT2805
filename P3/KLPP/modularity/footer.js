@@ -102,6 +102,13 @@ function footer() {
 
     foot.appendChild(tiller);
 
+    const link = document.createElement("a");
+    const link_tekst = document.createTextNode("OM OSS");
+    link.href = "om_oss.html";
+    link.id = "link_om_oss"
+    link.appendChild(link_tekst);
+    foot.appendChild(link);
+
     const soMe = document.createElement("div");
     soMe.id = "so_me";
 

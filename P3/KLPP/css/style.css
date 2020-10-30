@@ -37,8 +37,8 @@ h4{
     padding: 20px;
     overflow: hidden;
     font-family: helvetica;
-    font-size: 100%;
-    margin-left: 35%;
+    font-size: 16px;
+    margin-left: 30%;
     margin-top: 2%;
 }
 
@@ -57,11 +57,6 @@ h4{
     font-weight: lighter;
 }
 
-#aktiv{
-    color: rgb(244, 148, 30);
-    
-    /* endrer fargen på menyobjektet man er inne på til oransje */
-}
 
 #meny a:hover{
     color: rgb(221, 224, 218);
@@ -220,8 +215,7 @@ h4{
 
 .kontaktlokasjon{
     width: 27%;
-    float: left;
-    
+    float: left; 
 }
 
 #so_me{
@@ -320,6 +314,7 @@ h4{
 #Johannes {
     float: right;  
     margin-left: 4%;
+    width: 280px;
 }
 
 #ansatte, #om_oss_intro {
@@ -798,38 +793,35 @@ section ul{
     #fyll_inn {
         height: 700px;
         position: relative;
-        max-width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
     
     #fornavn {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 0%;
     }
     
     #etternavn {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 10%;
     }
     
     #e-mail {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 20%;
     }
     
     #telefon {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 30%;
     }
     
     #cven {
         position: absolute;
-        left: 38%;
+        left: 0%;
         top: 40%;
     }
     
@@ -840,42 +832,28 @@ section ul{
         width: 100%;
     }
     
-    #send {
-        position: absolute;
-        left: 0%;
-        bottom: 0%;
-        width: 100%;
-        border-radius: 10px;
-        box-sizing: border-box;
-        border-color: black;
-        background-color: rgb(221,224,218);
-        border: solid 1.5px;
-        padding: 12px 20px;
-        font-size: 17px;
-    }
-
     #salongene {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 40%;
     }
 
     #behandlingene {
         position: absolute;
-        left:25%;
+        left:0%;
         top: 50%;
         z-index: 3;
     }
 
     #frisør {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 60%;
     }
     
     #kalender {
         position: absolute;
-        left: 25%;
+        left: 0%;
         top: 70%;
     }
     
@@ -884,6 +862,149 @@ section ul{
         left:0%;   
         top: 85%;
     }
+}
 
+#link_om_oss {
+    display: none;
+}
+
+@media (max-width: 1170px) {
+    #meny{
+        font-size: 13px;
+        margin-top: 2.5%;
+    }
+    .kontaktlokasjon{ 
+        font-size: 13px;
+    }
+    #so_me{
+       font-size: 13px;
+    }
+}
+
+@media (max-width: 1030px) {
+    #meny{
+        font-size: 10px;
+        margin-top: 2.5%;
+    }
+}
+
+@media (max-width: 880px) {
+    #meny{
+        font-size: 7px;
+        margin-top: 3.5%;
+    }
+    .kontaktlokasjon{ 
+        font-size: 10px;
+    }
+    #foot h4 {
+        font-size: 16px;
+    }
+    #so_me{
+        font-size: 9px;
+     }
+}
+
+@media (max-width:600px){
+    #om_oss_intro, #ansatte{
+        font-size: 12px;
+    }
+    #ansatt_bilder {
+        height: 1500px;
+        position: relative;
+        margin: auto;
+        max-width: 70%;
+        overflow: hidden;
+    }
+    #ansatt1 {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    } 
     
+    #ansatt2 {
+        position: absolute;
+        left: 0%;
+        top: 15%;
+    } 
+    
+    #ansatt3 {
+        position: absolute;
+        left: 0%;
+        top: 30%;
+    } 
+    
+    #ansatt4 {
+        position: absolute;
+        left: 00%;
+        top: 45%;
+    } 
+    
+    #ansatt5 {
+        position: absolute;
+        left: 0%;
+        top: 60%;
+    } 
+    
+    #ansatt6 {
+        position: absolute;
+        left: 0%;
+        top: 75%;
+    }
+    
+    #ansatt7 {
+        position: absolute;
+        left: 0%;
+        top: 90%;
+    } 
+
+    #salonger {
+        height: 850px;
+        position: relative;
+        margin: auto;
+        max-width: 100%;
+    }
+    #map {
+        position: absolute;
+        left:10%;
+        top: 5%;
+        width: 100%;
+    } 
+
+    #salong_tekst {
+        position: absolute;
+        right: 0%;
+        top: 55%;
+        font-size: 12px;
+    }
+    #Johannes {
+        float: left;
+        width: 180px;  
+    }
+}
+@media (max-width: 400px) {
+    input[type=text], input[type=email], input[type=number] {
+        width: 200px;
+    }
+    #salongene select, input[type="datetime-local"], #behandlingene select, #frisør select {
+        width: 200px;
+    }
+    .søk_jobb{
+        font-size: 10px;
+    }
+    .Overskrift {
+        font-size: 20px;
+    }
+    #meny{
+        font-size: 7px;
+        margin-top: 3.5%;
+    }
+    .kontaktlokasjon{ 
+        display: none;
+    }
+    #link_om_oss {
+        display: block;
+    }
+    #so_me{
+        font-size: 10px;
+     }
 }

@@ -18,10 +18,10 @@
   <div class="wrapper">
     <div class="wrapper-inside">
       <header class="Bakgrunn">
-        <img src="images/bestill_time.jpg" width="100%">
+        <img src="images/bestill_time.jpg" alt="bestill time">
         <h1 class="Overskrift">BESTILL TIME</h1>
       </header>
-      <article class="bestill_time">
+      <div class="bestill_time">
         <form id="fyll_inn" onsubmit="return false">
           <div id="fornavn">
             <label for="fnavn">FORNAVN</label><br>
@@ -40,7 +40,7 @@
 
           <div id="telefon">
               <label for="tlf">TELEFON</label><br>
-              <input type="number" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+              <input type="number" id="tlf" name="tlf" required>
           </div>
           
           <div id="salongene">
@@ -61,7 +61,7 @@
             <div class="selectBox" onclick="showCheckboxes()">
               <label>VELG BEHANDLING</label><br>
               <select>
-                <option></option>
+                <option>KLIPP</option>
               </select>
               <div class="overSelect"></div>
             </div>
@@ -173,7 +173,7 @@
                  kontakter deg med et tilbud som best passer med dine spesifikasjoner</p>
           </div>
       </div>
-      </article>
+    </div>
     </div>
   </div>
   <footer id="foot"></footer>

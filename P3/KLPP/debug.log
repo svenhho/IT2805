@@ -1,2 +1,0 @@
-[1029/174114.239:ERROR:directory_reader_win.cc(43)] FindFirstFile: Systemet finner ikke angitt bane. (0x3)
-[1029/174114.271:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\odat_\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\689d49a6-b5c9-43bc-8a88-f4cf0e8e8d34: Systemet finner ikke angitt bane. (0x3)

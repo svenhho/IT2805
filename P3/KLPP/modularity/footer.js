@@ -105,7 +105,7 @@ function footer() {
     const link = document.createElement("a");
     const link_tekst = document.createTextNode("OM OSS");
     link.href = "om_oss.html";
-    link.id = "link_om_oss"
+    link.id = "link_om_oss";
     link.appendChild(link_tekst);
     foot.appendChild(link);
 

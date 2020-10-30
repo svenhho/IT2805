@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deliverable.css">
+    <title>Prosjekt design</title> 
+    <link rel="icon" type="image/png" href="images/P2.png"/>
+</head>
+<body>
+    <header>
+        <h1>Prosjekt P3 Design endringer</h1>
+    </header>
+    <div>
+        <header>
+            <h2>Dokumentdetaljer</h2>
+        </header>
+        <p>P3 endringer</p>
+        <p class="names"> Oda Tillman, Sven Herman Holmsen, Maja Meland, Philip Tinius Hansen Crome, Dag Hara</p>
+        <p>IT2805 5. november 2020</p>
+    </div>
+    <div>
+        <img id="Johannes" src="images/Johannes.jpg" alt="Bilde av Johannes Haar">
+        <header>
+            <h2>
+                Administrative detaljer
+            </h2>
+        </header>
+        <p>Klient: Johannes Haar</p>
+        <p>Nettsidenavn: <i>KLPP.</i></p>
+        <p>Kontaktperson: Johannes Haar</p>
+        <p>Link til nettsiden: klikk her</p>
+    </div>
+
+    <div>
+        <header>
+            <h2> 
+                Endringer vi har gjort
+            </h2>
+        </header>
+        <p>Her kommer teksten til hver side</p>    
+    
+        <h3>Hjemmeside (hjemmeside.html)</h3>
+        <p>Hjemmesiden er den første siden som lastes når brukeren kommer inn på klpp.no. Sentralt på siden vil det være en knapp for bestilling av timer. I bakgrunnen av siden vil det være et slideshow med bilder av forskjellige frisyrer. Siden kan også nås ved å trykke på logoen øverst i venstre hjørne.</p>
+
+        <h3>Bestill time (bestill_time.html)</h3>
+        <p>Denne siden skal være en enkel utformet form som gjør det lett å booke time. Nettsiden er hovedfokuset på referansesiden, men den skal også kunne aksesseres fra alle de andre nettsidene. Selve nettsiden skal inneholde utfyllingsbokser som gjør det naturlig for brukeren å føre inn. Kunder må starte med å fylle inn kontaktinformasjonen som fornavn, etternavn, e-post og mobilnummer. Videre på siden er det fire bokser der det er mulig å velge ulike salonger, behandlinger, datoer og frisører.</p>
+
+        <h3>Behandlinger (behandlinger.html)</h3>
+        <p>Behandlinger er en side med oversikt over de forskjellige behandlingene <i>KLPP.</i> tilbyr og kan nås fra alle andre sider gjennom oversiktsmenyen.</p>
+
+        <h3>Om oss (om_oss.html)</h3>
+        <p>Om oss er en side der man skal finne informasjon om historien til frisørkjeden, de ulike salongene og en oversikt over de ulike ansatte i frisørkjeden. Det første som dukker opp på denne siden er litt av historien bak frisørkjeden og litt om Johannes Haars visjon for salongene, samt et bilde og litt informasjon om Johannes Haar selv. Her vil det også være mulig å finne kontaktinformasjon til frisørkjeden.</p>
+      
+        <h3>Søk jobb (søk_jobb.html)</h3>
+        <p>Siden <i>KLPP.</i> er en helt nyoppstartet frisørkjede er Johannes fremdeles på jakt etter flere ansatte. På denne siden ønsker han derfor å fortelle litt om hvordan det er å jobbe som frisør i <i>KLPP.</i> og hvilke forventninger han har til sine ansatte.</p>
+       
+        <h3>Galleri (galleri.html)</h3>
+        <p>Dette skal være en side med bilder tatt på de ulike salongene til <i>KLPP.</i> Her er det både bilder av resultater av ulike behandlinger og bilder av frisørene i aksjon. Her kan kundene gå inn å se hva frisørene kan og hente inspirasjon til hva som kan gjøres hos <i>KLPP.</i> Her vil det brukes et grid der det er tre bilder i bredden, men med ulik høyde. Dersom man ønsker å se bildet i full størrelse klikker man på thumnailen og det vil komme et pop-up vindu med det ønskede bildet i full størrelse. For at det ikke skal bli for mye forstyrrelser rundt når man ser på det ene bildet tenker vi at bakgrunnen blir litt grået ut.</p>
+
+        <h3>COVID-19 (covid_19.html)</h3> 
+        <p>Klipping er en service med menneskelig kontakt. Dette gjør at frisørkjeden er direkte påvirket av befolkningens smitte og myndighetenes restriksjoner. Derfor er det viktig at denne nettsiden viser oppdatert informasjon om hvordan covid-situasjonen påvirker bedriften i nåtid samt hvordan det kan bli fremover. Denne nettsiden må også vise når nettsiden sist ble oppdatert for å trygge besøkende og vise at bedriften er årvåken og følger situasjonen tett.</p>
+    </div>
+        
+    <div>
+        <header>
+            <h2>
+                Minstekrav
+            </h2>
+        </header>
+
+        <h3>random_images.js</h3>
+        <p>Ved hjelp av en javascript funksjon skal bildet i bakgrunnen på forsiden tilfeldig rotere gjennom et galleri. Ved å se et utvalg av forskjellige frisyrer og stiler vil brukeren forhåpentligvis bli mer inspirert til å bestille en time hos KLPP. og dette kan deretter lett utføres ved å trykke på bestill time knappen på samme side. Javascriptet vil bruke random math til å velge blant de forskjellige bildene i galleriet.</p>
+        
+        <h3>priskalkulator.js</h3>
+        <p>I bestill time delen av siden får man blant annet opp en liste over de forskjellige behandlingene KLPP. tilbyr. Når man huker av de forskjellige alternativene skal siden, ved hjelp av en javascript funksjon, gi brukeren totalprisen live under alternativene. Dette vil hjelpe til med å etablere tillit mellom brukere og frisøren, og vil gi siden et mer profesjonelt preg.</p>
+
+        <h3>image_size.js</h3>
+        <p>I Galleri-siden skal det være en javascript funksjon som lager et pop-up vindu som viser full størrelse på bilde når thumbnailen blir klikket. På galleri-siden vil det være mange bilder som skal inspirere kunder til ulike hårfrisyrer og behandlinger. For å vise variasjon er det ønskelig med flere bilder i mindre format så det blir plass til flere bilder på nettsiden. Når et bilde er valgt til å vise full størrelse er det ønskelig at det er en grået bakgrunn for å fremheve pop-up vinduet.</p>
+        
+        <h3>bestillingsbekreftelse.js</h3>
+        <p>Når bruker fyller inn en bestilling er det viktig at man får en feedback på at nettsiden har akseptert søknaden. Denne bekreftelsen skal bli vist til brukeren slik at brukeren er trygg på at bestillingen har gått gjennom systemet. Når brukeren har fylt ut bestillingssiden og trykker bestill så skal nettsiden refreshe og vise en tom bestillingsside. Samtidig skal det komme et pop-up vindu som viser at bestillingen er bekreftet. En grået bakgrunn er ønskelig for å tydeliggjøre pop-up vinduet. Når brukeren lukker vinduet kan man starte på en ny bestilling siden nettsiden er tilbakestilt til normaltilstanden (default).</p>
+
+        <h3>søknadsbekreftelse.js</h3>
+        <p>Når en jobbsøker fyller inn formet er det viktig at det blir gitt tydelig feedback på at KLPP. har mottatt søknaden. Denne bekreftelsen er viktig fordi det gir søkeren en trygghet på at innsendingen er akseptert. Ved innsending så skal siden tilbakestilles til normaltilstanden, og det skal komme et pop-up vindu som sier at innsendingen er mottatt. Det skal også være en grået bakgrunn for å fremheve pop-up vinduet.</p>
+
+    </div>
+    <div>
+        <header>
+            <h2>
+                Oppdatert oversikt over plan
+            </h2>
+        </header>
+        <p>Nedenfor er den endelige listen over html-filer, js-filer, css-fil og bilde-filer. 
+           Listen er forholdsvis lik den fra P2 Design, bortsett fra at antallet bilder er fastsatt og navnene til disse filene er korrekte. 
+           Det er dessuten lagt til og endret de javascript filene som er nevnt i forrige seksjon "Endringer vi har gjort". 
+        </p>
+        
+        <header>
+            <h3>Organisasjonsskjema</h3>
+        </header>
+        <ul>
+            <li>hjemmeside.html</li>
+            <li>bestill_time.html</li>
+            <li>behandlinger.html</li>
+            <li>om_oss.html</li>
+            <li>søk_jobb.html</li>
+            <li>galleri.html</li>
+            <li>covid_19.html</li>
+            <li>images/
+                <ul>
+                    <li>favicon.png</li>
+                    <li>logo.png</li>
+                    <li>facebook_logo.png</li>
+                    <li>instagram_logo.png</li>
+                    <li>bakgrunnsbilde_1.png</li>
+                    <li>bakgrunnsbilde_2.png</li>
+                    <li>bakgrunnsbilde_3.png</li>
+                    <li>bakgrunnsbilde_4.png</li>
+                    <li>bakgrunnsbilde_5.png</li>
+                    <li>bestill_time.png</li>
+                    <li>behandlinger.png</li>
+                    <li>klipp.png</li>
+                    <li>farge.png</li>
+                    <li>skjegg.png</li>
+                    <li>andre_behandlinger.png</li>
+                    <li>om_oss.png</li>
+                    <li>johanns_haar.png</li>
+                    <li>ansatt_1.png</li>
+                    <li>ansatt_2.png</li>
+                    <li>ansatt_3.png</li>
+                    <li>...</li>
+                    <li>ansatt_6.png</li>
+                    <li>søk_jobb.png</li>
+                    <li>galleri.png</li>
+                    <li>galleri_1.png</li>
+                    <li>galleri_2.png</li>
+                    <li>galleri_3.png</li>
+                    <li>...</li>
+                    <li>galleri_30.png</li>
+                </ul>
+            </li>
+            <li>modularity/
+                <ul>
+                    <li>menybar.js</li>
+                    <li>footer.js</li>
+                </ul>  
+            </li>
+            <li>css/
+                <ul>
+                    <li>style.css</li>
+                </ul>
+            </li>
+            <li>scripts/
+                <ul>
+                    <li>priskalkulator.js</li>
+                    <li>image_size.js</li>
+                    <li>bekreftelse.js</li>
+                    <li>random_images.js</li>
+                    <li>dato.js</li>
+                </ul>
+            </li>
+        </ul>
+        <header>
+            <h3>Endelig arbeidsfordeling</h3>
+        </header>
+        <table>
+            <tr>
+                <th>Filnavn</th>
+                <th>Beskrivelse</th>
+                <th>Ansvarlig</th>
+                <th>Frist</th>
+            </tr>
+            <tr>
+                <td>hjemmeside.html</td>
+                <td>Hovedside med bestill time knapp og tilfeldige bilder bak.</td>
+                <td>Maja</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>bestill_time.html</td>
+                <td>Side med timebestilling og live priskalkulator. Bekreftelse når man har bestilt.</td>
+                <td>Maja</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>om_oss.html</td>
+                <td>Side med kort historie om kjeden, oversikt over ansatte og lokasjoner.</td>
+                <td>Oda</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>søk_jobb.html</td>
+                <td>Levere inn CV og skrive inn søknad.</td>
+                <td>Oda</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>galleri.html</td>
+                <td>Galleri med bilder av forskjellige frisyrer og farger. Thumbnails blir store bilder.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>behandlinger.html</td>
+                <td>Oversikt over forskjellige behandlinger med beskrivelser og priser.</td>
+                <td>Philip</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>covid_19.html</td>
+                <td>Informasjon om COVID-19 og hvordan KLPP. forholder seg til situasjonen.</td>
+                <td>Sven</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>logo.png</td>
+                <td>Må lage en logo for KLPP.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>favicon.png</td>
+                <td>Må lage en favicon som er K.</td>
+                <td>Dag</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>menybar</td>
+                <td>Lage en felles modular menybar som brukes til alle sidene.</td>
+                <td>Maja</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>footer</td>
+                <td>lage en felles modular footer som brukes til alle sidene.</td>
+                <td>Philip</td>
+                <td>16.10.2020</td>
+              </tr>
+              <tr>
+                <td>random_images.js</td>
+                <td>JavaScript som lar forsiden rotere mellom tilfeldige bakgrunnsbilder.</td>
+                <td>Philip</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>priskalkulator.js</td>
+                <td>JavaScript som gjør det mulig å kalkulere totalprisen når man bestiller.</td>
+                <td>Oda</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>image_size.js</td>
+                <td>JavaScript som gjør at man får fullsize bilder når man trykker på thumbnails i galleri.</td>
+                <td>Dag</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>bestillingsbekreftelse.js</td>
+                <td>JavaScript som gir deg en bekreftelse når du har bestilt en time.</td>
+                <td>Sven</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>Søknadsbekreftelse.js</td>
+                <td>JavaScript som gir deg en bekreftelse når du har sendt søknad.</td>
+                <td>Sven</td>
+                <td>23.10.2020</td>
+              </tr>
+              <tr>
+                <td>style.css</td>
+                <td>Å style alle html-sidene vil være noe alle må bidra med.</td>
+                <td>Alle</td>
+                <td>23.10.2020</td>
+              </tr>
+        </table>
+    </div>
+    <footer>
+        Oda Tillman, Sven Herman Holmsen, Maja Meland, Philip Tinius Hansen Crome, Dag Hara 
+    </footer>
+</body>
+</html>

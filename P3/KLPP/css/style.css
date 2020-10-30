@@ -645,24 +645,24 @@ section ul{
 
 .en{
     width: 30%;
-    position: absolute;
+    position: relative;
     left: 2%;
-    top: 100px;
+    top: 20px;
+    margin-bottom: 40px;
   }
-
 
 .to{
     width: 30%;
     position: absolute;
     right: 2%;
-    top: 100px;
+    top: 20px;
   }
 
 .tre{
     width: 30%;
     position: absolute;
     left: 35%;
-    top: 100px;
+    top: 20px;
   }
 
   

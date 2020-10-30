@@ -113,7 +113,6 @@ h4{
     from {opacity: .4}
     to {opacity: 1}
   }
-  
 
 #slideshow_inside {
     position: relative;
@@ -123,15 +122,14 @@ h4{
 
 #bestill_knapp {
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     height: 35px;
     width: 280px;
     transform: translate(-50%, -50%);
-    border:4px solid rgb(244, 148, 30); 
+    border:2px solid rgb(244, 148, 30); 
     background-color:rgba(0,0,0,0.4);
     font-weight: lighter;
-
 }
 
 #bestill_knapp a{
@@ -195,12 +193,12 @@ h4{
     padding-top: 100px;
 }
 .wrapper-inside{
-    padding-bottom: 250px;
+    padding-bottom: 240px;
 }
 
 #foot{
     font-family: Helvetica, sans-serif;
-    height: 260px;
+    height: 270px;
     margin-top: -250px;
     padding: 10px;
     background-color:rgb(205, 223, 245);
@@ -902,6 +900,9 @@ section ul{
     #so_me{
         font-size: 9px;
      }
+    #bestill_knapp {
+        display: none;
+    }
 }
 
 @media (max-width:600px){
@@ -978,7 +979,27 @@ section ul{
     }
     #Johannes {
         float: left;
+        padding: 10px;
         width: 180px;  
+    }
+    .kontaktlokasjon{ 
+        display: none;
+    }
+    #link_om_oss {
+        display: block;
+    }
+    #so_me{
+        width: 50%;
+        font-size: 10px;
+        float: right;
+        left: 50%;
+    }
+    #link_om_oss {
+        width: 100%;
+        float: left; 
+    }
+    #link_om_oss a{
+        font-size: 40px; 
     }
 }
 @media (max-width: 400px) {
@@ -998,13 +1019,4 @@ section ul{
         font-size: 7px;
         margin-top: 3.5%;
     }
-    .kontaktlokasjon{ 
-        display: none;
-    }
-    #link_om_oss {
-        display: block;
-    }
-    #so_me{
-        font-size: 10px;
-     }
 }

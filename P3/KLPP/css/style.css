@@ -544,13 +544,13 @@ input[type="file"] {
 #covidd {
     position: absolute;
     left:30%;   
-    top: 70%;
+    top: 80%;
 }
 
 #totalPris {
     position: absolute;
     left: 0%;
-    top: 80%;
+    top: 60%;
 }
 
 .selectBox { 
@@ -876,6 +876,11 @@ section ul{
         position: absolute;
         left:0%;   
         top: 85%;
+    }
+    #totalPris {
+        position: absolute;
+        left: 0%;
+        top: 80%;
     }
 }
 

@@ -912,6 +912,7 @@ section ul{
     #meny a{
         margin-left: 15px;
 }
+}
 
 @media (max-width: 880px) {
     #meny{
@@ -936,6 +937,36 @@ section ul{
 }
 
 @media (max-width:600px){
+    .behandling_boks{
+        position: relative;
+        width: 100%;
+        height: 720px;
+    }       
+    .behandling_right .behandling_tittel, .behandling_left .behandling_tittel{
+        position: absolute;
+        left: 10%;
+        top: 0%;
+    }
+    .behandling_right .right_text, .behandling_left .left_text{
+        position: absolute;
+        left:10%;
+        top: 50%;
+        width: 60%;
+    }
+
+    .behandling_right .right_pris, .behandling_left .left_pris{
+        position: absolute;
+        left: 80%;
+        top: 50%;
+        width: 20%;
+    }
+    
+    .behandling_bilde_left,  .behandling_bilde_right{
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 100%;
+    }
     #meny{
         margin-left: 40%;
         margin-top: 4%;
@@ -1059,5 +1090,34 @@ section ul{
     .Overskrift {
         font-size: 20px;
     }
-}
+    .behandling_boks{
+        position: relative;
+        width: 100%;
+        height: 670px;
+    }       
+    .behandling_right .behandling_tittel, .behandling_left .behandling_tittel{
+        position: absolute;
+        left: 10%;
+        top: 0%;
+    }
+    .behandling_right .right_text, .behandling_left .left_text{
+        position: absolute;
+        left:10%;
+        top: 35%;
+        width: 60%;
+    }
+
+    .behandling_right .right_pris, .behandling_left .left_pris{
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        width: 20%;
+    }
+    
+    .behandling_bilde_left,  .behandling_bilde_right{
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 100%;
+    }
 }

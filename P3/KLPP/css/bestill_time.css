@@ -152,6 +152,10 @@ input[type=text], input[type=email], input[type=number], #salongene select, inpu
     color: rgb(0,0,0); 
 }
 
+#menyboks #bestill_time_id {
+    color: rgb(244, 148, 30);
+}
+
 .close-window{
     color:rgb(221, 224, 218);
     float: right;

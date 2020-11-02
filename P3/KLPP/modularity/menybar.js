@@ -3,11 +3,6 @@ const meny = document.createElement("div");
 meny.id = "meny";
 menyboks.appendChild(meny);
 
-/*const klpp_div = document.createElement("div");
-klpp_div.id = "klpp_div";
-menyboks.appendChild(klpp_div);*/
-
-
 function menybar() {
     const klpp = document.createElement("a");
     const klpp_tekst = document.createTextNode("KLPP.");

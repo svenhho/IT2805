@@ -1,0 +1,207 @@
+.bestill_time {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+input[type=text], input[type=email], input[type=number], #salongene select, input[type="datetime-local"], #behandlingene select, #frisør select {
+    width: 300px;
+    border-radius: 10px;
+    height: 30px;
+    box-sizing: border-box;
+    border-color: black;
+    border: solid 1.5px;
+}
+
+#fyll_inn {
+    height: 550px;
+    position: relative;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#fornavn {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#etternavn {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#e-mail {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+}
+
+#telefon {
+    position: absolute;
+    right: 0%;
+    top: 15%;
+}
+
+#salongene {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+}
+
+#kalender {
+    position: absolute;
+    right: 0%;
+    top: 45%;
+}
+
+#behandlingene {
+    position: absolute;
+    right:0%;
+    top: 30%;
+    z-index: 3;
+}
+
+#checkBoxes{
+    border: 1px solid;
+    background-color: white;
+}
+
+#frisør {
+    position: absolute;
+    left:0%;
+    top: 45%;
+}
+
+
+#covidd {
+    position: absolute;
+    left:30%;   
+    top: 80%;
+}
+
+#totalPris {
+    position: absolute;
+    left: 0%;
+    top: 60%;
+}
+
+.selectBox { 
+    position: relative; 
+}
+
+.overSelect { 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+} 
+
+#checkBoxes { 
+    display: none; 
+} 
+
+#checkBoxes label { 
+    display: block; 
+} 
+
+.selectBox select {
+  width: 100px;
+}
+
+#send {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: black;
+    background-color: rgb(221,224,218);
+    border: solid 1.5px;
+    padding: 12px 20px;
+    font-size: 17px;
+}
+
+@media (max-width: 1050px) {
+    #fyll_inn {
+        height: 700px;
+        position: relative;
+    }
+    
+    #fornavn {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    }
+    
+    #etternavn {
+        position: absolute;
+        left: 0%;
+        top: 10%;
+    }
+    
+    #e-mail {
+        position: absolute;
+        left: 0%;
+        top: 20%;
+    }
+    
+    #telefon {
+        position: absolute;
+        left: 0%;
+        top: 30%;
+    }
+        
+    #salongene {
+        position: absolute;
+        left: 0%;
+        top: 40%;
+    }
+
+    #behandlingene {
+        position: absolute;
+        left:0%;
+        top: 50%;
+        z-index: 3;
+    }
+
+    #frisør {
+        position: absolute;
+        left: 0%;
+        top: 60%;
+    }
+    
+    #kalender {
+        position: absolute;
+        left: 0%;
+        top: 70%;
+    }
+    
+    #covidd {
+        position: absolute;
+        left:0%;   
+        top: 85%;
+    }
+    #totalPris {
+        position: absolute;
+        left: 0%;
+        top: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    input[type=text], input[type=email], input[type=number] {
+        width: 200px;
+    }
+    #salongene select, input[type="datetime-local"], #behandlingene select, #frisør select {
+        width: 200px;
+    }
+    .søk_jobb{
+        font-size: 10px;
+    }
+}

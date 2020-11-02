@@ -1,0 +1,260 @@
+#ansatt_bilder {
+    height: 450px;
+    position: relative;
+    margin: auto;
+    max-width: 70%;
+}
+
+#ansatt_text {
+    text-align: center;
+}
+
+#ansatt1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+} 
+
+#ansatt2 {
+    position: absolute;
+    left: 28%;
+    top: 0%;
+} 
+
+#ansatt3 {
+    position: absolute;
+    left: 55%;
+    top: 0%;
+} 
+
+#ansatt4 {
+    position: absolute;
+    left: 83%;
+    top: 0%;
+} 
+
+#ansatt5 {
+    position: absolute;
+    left: 14%;
+    bottom: 0%;
+} 
+
+#ansatt6 {
+    position: absolute;
+    left: 41%;
+    bottom: 0%;
+}
+
+#ansatt7 {
+    position: absolute;
+    left: 68%;
+    bottom: 0%;
+} 
+
+#ansatt1 img, #ansatt2 img, #ansatt3 img, #ansatt4 img, #ansatt5 img, #ansatt6 img, #ansatt7 img{
+    width: 100px;
+}
+
+#Johannes {
+    float: right;  
+    margin-left: 4%;
+    width: 280px;
+}
+
+#ansatte, #om_oss_intro {
+    width: 72%;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#salonger{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#om_oss_intro p {
+    margin-top: 50px;
+    text-align: left;
+}
+
+#salonger {
+    height: 600px;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+#map {
+    position: absolute;
+    left: 0%;
+    top: 13%;
+    width: 50%;
+} 
+
+#map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#salong_tekst {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    width: 40%;
+}
+
+/* Tilpasset mindre skjerm */
+
+@media (max-width: 1000px) {
+    #ansatt_bilder {
+        height: 900px;
+        position: relative;
+        margin: auto;
+        max-width: 70%;
+        overflow: hidden;
+    }
+    #ansatt1 {
+        position: absolute;
+        left: 20%;
+        top: 0%;
+    } 
+    
+    #ansatt2 {
+        position: absolute;
+        left: 60%;
+        top: 0%;
+    } 
+    
+    #ansatt3 {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+    } 
+    
+    #ansatt4 {
+        position: absolute;
+        left: 60%;
+        top: 25%;
+    } 
+    
+    #ansatt5 {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    } 
+    
+    #ansatt6 {
+        position: absolute;
+        left: 60%;
+        top: 50%;
+    }
+    
+    #ansatt7 {
+        position: absolute;
+        left: 40%;
+        top: 75%;
+    } 
+
+    #salonger {
+        height: 1000px;
+        position: relative;
+        margin: auto;
+        max-width: 100%;
+    }
+    #map {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        width: 100%;
+    } 
+    #salong_tekst {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    #Johannes {
+        float: left;
+        padding: 10px;
+        width: 180px;
+    }
+    #om_oss_intro, #ansatte{
+        font-size: 12px;
+    }
+    #ansatt_bilder {
+        height: 1500px;
+        position: relative;
+        margin: auto;
+        max-width: 70%;
+        overflow: hidden;
+    }
+    #ansatt1 {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+    } 
+    
+    #ansatt2 {
+        position: absolute;
+        left: 0%;
+        top: 15%;
+    } 
+    
+    #ansatt3 {
+        position: absolute;
+        left: 0%;
+        top: 30%;
+    } 
+    
+    #ansatt4 {
+        position: absolute;
+        left: 00%;
+        top: 45%;
+    } 
+    
+    #ansatt5 {
+        position: absolute;
+        left: 0%;
+        top: 60%;
+    } 
+    
+    #ansatt6 {
+        position: absolute;
+        left: 0%;
+        top: 75%;
+    }
+    
+    #ansatt7 {
+        position: absolute;
+        left: 0%;
+        top: 90%;
+    } 
+
+    #salonger {
+        height: 850px;
+        position: relative;
+        margin: auto;
+        max-width: 100%;
+    }
+    #map {
+        position: absolute;
+        left:0%;
+        top: 5%;
+        width: 100%;
+    } 
+
+    #salong_tekst {
+        position: absolute;
+        right: 0%;
+        top: 55%;
+        font-size: 12px;
+    }
+}
+    

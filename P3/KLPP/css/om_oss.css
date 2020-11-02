@@ -185,9 +185,8 @@
 
 @media (max-width:600px){
     #Johannes {
-        float: left;
         padding: 10px;
-        width: 180px;
+        width: 200px;
     }
     #om_oss_intro, #ansatte{
         font-size: 12px;

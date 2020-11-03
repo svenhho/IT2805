@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KLPP.</title>
     <link rel="icon" type="image/svg" href="images/favicon.svg"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bestill_time.css">
 </head>
 <body>
-  <div id="menyboks"></div>
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> 
   <script src="modularity/menybar.js"></script>
   <div class="wrapper">
     <div class="wrapper-inside">
@@ -49,10 +54,8 @@
           </div>
 
           <div id="kalender">
-            <script>
-              datePickerId.max = new Date().toISOString().split("T")[0];</script>
             <label for="dato">DATO</label><br>
-            <input type="datetime-local" id="dato" name="dato" min="datePickerId"><br>
+            <input type="datetime-local" id="dato" name="dato"><br>
           </div>
 
           <div id="behandlingene">

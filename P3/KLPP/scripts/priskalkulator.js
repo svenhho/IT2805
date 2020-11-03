@@ -176,8 +176,11 @@ function hårvask() {
 function calculateTotal() {
 
     let finalPrice = dame() + herre() + barn() + student() + senior() + foliestriper() + bayalage() + ettervekst() + vipper() + glans() + maskinklipp() + knivbarbering() + vask() + styling() + extensions() + hårvask();
+if(finalPrice == null){divobj.innerHTML = "Totalpris: "}
 
     let divobj = document.getElementById('totalPris');
     divobj.style.display='block';
     divobj.innerHTML= "Totalpris: "+finalPrice+",-"
 }
+
+calculateTotal()

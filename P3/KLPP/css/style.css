@@ -44,7 +44,7 @@ h4{
 
 .wrapper{
     min-height: 100%;
-    padding-top: 0px;
+    margin-top: 78px;
 }
 
 .wrapper-inside{
@@ -105,11 +105,20 @@ h4{
         right: 0;
         top: 0;
     }
-    .topnav.responsive a {
+    .topnav.responsive #klpp {
+        font-size: 30px;
+        margin-right: 100%;
+        margin-bottom: 10px;
+    }
+    .topnav.responsive a:not(:first-child) {
+        font-size: 12px;
         float: none;
         display: block;
         text-align: left;
         z-index: 50;
+    }
+    .topnav.responsive.wrapper{
+        margin-top: 0px;
     }
 }
 /* FOOTER */

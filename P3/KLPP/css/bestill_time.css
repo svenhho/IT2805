@@ -237,7 +237,7 @@ input[type=text], input[type=email], input[type=tel], #salongene select, input[t
 }
 
 @media (max-width: 400px) {
-    input[type=text], input[type=email], input[type=number] {
+    input[type=text], input[type=email], input[type=tel] {
         width: 200px;
     }
     #salongene select, input[type="datetime-local"], #behandlingene select, #frisør select {

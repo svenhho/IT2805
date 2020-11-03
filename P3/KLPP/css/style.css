@@ -94,6 +94,9 @@ h4{
       float: right;
       display: block;
     }
+    .topnav a.icon:hover {
+        color:  black;
+      }
 }
 
 @media screen and (max-width: 900px) {

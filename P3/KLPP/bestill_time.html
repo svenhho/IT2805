@@ -49,8 +49,10 @@
           </div>
 
           <div id="kalender">
+            <script>
+              datePickerId.max = new Date().toISOString().split("T")[0];</script>
             <label for="dato">DATO</label><br>
-            <input type="datetime-local" id="dato" name="dato"><br>
+            <input type="datetime-local" id="dato" name="dato" min="datePickerId"><br>
           </div>
 
           <div id="behandlingene">

@@ -37,8 +37,13 @@ footer {
     width: 100%;
 }
 
-#brukertest{
+#brukertest {
+    width: 100%;
+}
+
+#test {
     float: right;
     margin-left: 10px;
     top: 40px;
+    width: 50%;
 }

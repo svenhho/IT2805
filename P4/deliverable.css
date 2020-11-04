@@ -32,3 +32,13 @@ footer {
     margin-top: 70px;
     margin-bottom: 0px;
 }
+
+#diagram{
+    width: 100%;
+}
+
+#brukertest{
+    float: right;
+    margin-left: 10px;
+    top: 40px;
+}

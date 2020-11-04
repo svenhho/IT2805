@@ -19,6 +19,9 @@ input[type=text], input[type=email], input[type=tel], #salongene select, input[t
     border-color: black;
     border: solid 1.5px;
 }
+input[type="datetime-local"]:before{
+    content:"DD.MM.YYYY / kl:";
+}
 
 /* Plassering til boksene */
 #fyll_inn {

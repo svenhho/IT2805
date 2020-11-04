@@ -26,15 +26,17 @@
     padding-top: 70px;
     padding-bottom: 80px;
     line-height: 1.4;
+    padding: 5%;
     
 }
 
 #important2{
     text-align: justify;
+    padding: 5%;
 }
 
 #mellomrom{
-    width: 100%;
+    width: 90%;
     height: 3px;
     background-color: black;
     margin: auto;

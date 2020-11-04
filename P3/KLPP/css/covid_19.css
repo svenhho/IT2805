@@ -1,3 +1,4 @@
+/*Aktiv nettside er oransje*/
 #myTopnav #covid_19_id {
     color: rgb(244, 148, 30);
 }
@@ -17,8 +18,6 @@
     padding-top: 30px;
 }
 
-
-
 #important{
     text-align: center;
     font-size: 1.4em;
@@ -26,8 +25,7 @@
     padding-top: 70px;
     padding-bottom: 80px;
     line-height: 1.4;
-    padding: 5%;
-    
+    padding: 5%; 
 }
 
 #important2{
@@ -40,8 +38,6 @@
     height: 3px;
     background-color: black;
     margin: auto;
-    
-
 }
 
 #oppdatering {

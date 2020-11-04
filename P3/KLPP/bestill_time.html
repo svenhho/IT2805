@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/bestill_time.css">
 </head>
 <body>
+  <!--Menybaregreier-->
   <div class="topnav" id="myTopnav">
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div> 
-  <script src="modularity/menybar.js"></script>
+   <!--To diver rundt alt som i css lager space til menybaren og footeren-->
   <div class="wrapper">
     <div class="wrapper-inside">
       <header class="Bakgrunn">
@@ -23,6 +24,8 @@
         <h1 class="Overskrift">BESTILL TIME</h1>
       </header>
       <div class="bestill_time">
+        
+        <!--Alle innfyllingsboksene er inne i en form-->
         <form id="fyll_inn" onsubmit="return false">
           <div id="fornavn">
             <label for="fnavn">FORNAVN</label><br>
@@ -166,6 +169,7 @@
           <button type="submit" value="SEND" id="send" onclick="giveResponse()">SEND</button> 
         </form>
         
+        <!--Feedback vinduet-->
         <div id="userFeedback" class="feedback-all">
           <div class="feedback-content">
               <span class="close-window" onclick="closingWindow()">&times;</span>
@@ -178,6 +182,7 @@
     </div>
   </div>
   <footer id="foot"></footer>
+  <script src="modularity/menybar.js"></script>
   <script src="modularity/footer.js"></script>
   <script src="scripts/priskalkulator.js"></script>
   <script src="scripts/bekreftelse.js"></script>

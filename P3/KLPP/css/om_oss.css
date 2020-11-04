@@ -1,7 +1,36 @@
+/*Aktiv nettside er oransje*/
 #myTopnav #om_oss_id {
     color: rgb(244, 148, 30);
 }
 
+#Johannes {
+    float: right;  
+    margin-left: 4%;
+    width: 280px;
+}
+
+#ansatte, #om_oss_intro {
+    width: 72%;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#salonger{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#om_oss_intro p {
+    margin-top: 50px;
+    text-align: left;
+}
+
+/*Plassering på de ansatte*/
 #ansatt_bilder {
     height: 450px;
     position: relative;
@@ -59,33 +88,7 @@
     width: 100px;
 }
 
-#Johannes {
-    float: right;  
-    margin-left: 4%;
-    width: 280px;
-}
-
-#ansatte, #om_oss_intro {
-    width: 72%;
-    margin-left: 14%;
-    margin-right: 14%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#salonger{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#om_oss_intro p {
-    margin-top: 50px;
-    text-align: left;
-}
-
+/*Plassering på kart og tekst for hver salong*/
 #salonger {
     height: 600px;
     position: relative;

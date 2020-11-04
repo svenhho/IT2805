@@ -1,12 +1,14 @@
 const foot = document.getElementById("foot");
 
 function footer() {
+    /* Kontaktinfo øverst på footeren*/
     const kontaktinfo = document.createElement("h4");
     const kontaktinfo_tekst = document.createTextNode("KONTAKTINFO");
     kontaktinfo.id = "kontakt";
     kontaktinfo.appendChild(kontaktinfo_tekst);
     foot.appendChild(kontaktinfo);
 
+    /*Lager og legger til info om Lade i footeren*/
     const lade = document.createElement("div");
     lade.className = "kontaktlokasjon";
 
@@ -38,7 +40,7 @@ function footer() {
 
     foot.appendChild(lade);
 
-
+    /*Lager og legger til info om Solsiden i footeren*/
     const solsiden = document.createElement("div");
     solsiden.className = "kontaktlokasjon";
 
@@ -70,7 +72,7 @@ function footer() {
 
     foot.appendChild(solsiden);
 
-
+    /*Lager og legger til info om Tiller i footeren*/
     const tiller = document.createElement("div");
     tiller.className = "kontaktlokasjon";
 
@@ -102,6 +104,7 @@ function footer() {
 
     foot.appendChild(tiller);
 
+    /*Lager og legger til instagram of facebook iconer og "linker"*/
     const link = document.createElement("a");
     const link_tekst = document.createTextNode("OM OSS");
     link.href = "om_oss.html";

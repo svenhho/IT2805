@@ -1,3 +1,4 @@
+/*Aktiv nettside er oransje*/
 #myTopnav #søk_jobb_id {
     color: rgb(244, 148, 30);
 }
@@ -9,7 +10,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
+/*Style på infyllingsboksene */
 input[type=text], input[type=email], input[type=tel] {
     width: 300px;
     border-radius: 10px;
@@ -40,6 +41,7 @@ input[type="file"] {
     color: black;
 }
 
+/* Plassering til boksene */
 #fyll_inn {
     height: 550px;
     position: relative;

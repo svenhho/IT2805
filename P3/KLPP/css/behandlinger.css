@@ -1,3 +1,4 @@
+/*Aktiv nettside er oransje*/
 #myTopnav #behandlinger_id {
     color: rgb(244, 148, 30);
 }
@@ -6,6 +7,7 @@
     margin-top: 40px;
 }
 
+/*Plasseringer på overskrifter, tekster og bilder */
 .behandling_tittel{
     text-align: left;
     margin-top: 0%;
@@ -46,6 +48,8 @@
     width: 50%;
     float: right;
 }
+
+/*Tilpasset smalere skjermer */
 
 @media (max-width:600px){
     .behandling_boks{

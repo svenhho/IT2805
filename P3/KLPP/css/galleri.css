@@ -1,3 +1,4 @@
+/*Aktiv nettside er oransje*/
 #myTopnav #galleri_id {
     color: rgb(244, 148, 30);
 }
@@ -13,7 +14,6 @@
 
 .header{
     position: relative;
-
 }
 
 .galleri{
@@ -22,6 +22,7 @@
     position: relative;
 }
 
+/*Plassering på hver enkelt bilde-kolonne*/
 .en{
     width: 30%;
     position: relative;
@@ -67,7 +68,7 @@
     max-width: 700px;
 }
 
-/* 100% Image Width on Smaller Screens */
+/* 80% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 80%;

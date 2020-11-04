@@ -85,7 +85,7 @@ h4{
 .topnav .icon {
   display: none;
 }
-
+/*Tilpasset smalere skjerm*/
 @media screen and (max-width: 900px) {
     .topnav a:not(:nth-child(2)){
       display: none;
@@ -196,7 +196,7 @@ h4{
         font-size: 9px;
      }
 }
-
+/*Endrer kontaktinformasjonen til en link til om_oss.html*/
 @media (max-width:600px){
     .kontaktlokasjon{ 
         display: none;
@@ -220,7 +220,6 @@ h4{
     }    
     #foot a:hover{
         color: rgb(244, 148, 30);
-        /* endrer dargen til menyobjektene til grå når man har musen over dem */
     }
 }
 

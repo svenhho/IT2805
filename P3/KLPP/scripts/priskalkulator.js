@@ -1,3 +1,4 @@
+/* En del inspirasjon til denne koden er hentet fra https://www.sitepoint.com/community/t/if-select-3-checkbox-then-discount-the-price/259084 */
 let show = true; 
 
 function showCheckboxes() { 
@@ -12,7 +13,7 @@ function showCheckboxes() {
         show = true; 
     } 
 } 
-
+/*Lager pris på dame*/
 function dame() {
     let damePris=0;
     let theForm = document.forms["fyll_inn"];
@@ -23,6 +24,7 @@ function dame() {
     return damePris;
 }
 
+/*Lager pris på herre*/
 function herre() {
     let herrePris=0;
     let theForm = document.forms["fyll_inn"];
@@ -32,7 +34,8 @@ function herre() {
     }
     return herrePris;
 }
-      
+
+/*Lager pris på barn*/
 function barn() {
     let barnePris=0;
     let theForm = document.forms["fyll_inn"];
@@ -43,6 +46,7 @@ function barn() {
     return barnePris;
 }
 
+/*Lager pris på student*/
 function student() {
     let studentPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -53,6 +57,7 @@ function student() {
     return studentPris;
 }
 
+/*Lager pris på senior*/
 function senior() {
     let seniorPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -63,6 +68,7 @@ function senior() {
     return seniorPris;
 }
 
+/*Lager pris på foliestriper*/
 function foliestriper() {
     let foliestriperPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -73,6 +79,7 @@ function foliestriper() {
     return foliestriperPris;
 }
 
+/*Lager pris på bayalage*/
 function bayalage() {
     let bayalagePris=0;
     let theForm = document.forms["fyll_inn"];
@@ -83,6 +90,7 @@ function bayalage() {
     return bayalagePris;
 }
 
+/*Lager pris på ettervekst*/
 function ettervekst() {
     let ettervekstPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -93,6 +101,7 @@ function ettervekst() {
     return ettervekstPris;
 }
 
+/*Lager pris på vipper*/
 function vipper() {
     let vipperPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -103,6 +112,7 @@ function vipper() {
     return vipperPris;
 }
 
+/*Lager pris på glans*/
 function glans() {
     let glasPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -113,6 +123,7 @@ function glans() {
     return glasPris;
 }
 
+/*Lager pris på maskinklipp*/
 function maskinklipp() {
     let maskinklippPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -123,6 +134,7 @@ function maskinklipp() {
     return maskinklippPris;
 }
 
+/*Lager pris på knivbarbering*/
 function knivbarbering() {
     let knivbarberingPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -133,6 +145,7 @@ function knivbarbering() {
     return knivbarberingPris;
 }
 
+/*Lager pris på vask*/
 function vask() {
     let vaskPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -143,16 +156,18 @@ function vask() {
     return vaskPris;
 }
 
+/*Lager pris på styling*/
 function styling() {
     let stylingPris=0;
     let theForm = document.forms["fyll_inn"];
     let styling= theForm.elements["styling"];
     if(styling.checked==true) {
-        stylingPris=700;
+        stylingPris=1000;
     }
     return stylingPris;
 }
 
+/*Lager pris på ectensions*/
 function extensions() {
     let extensionPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -163,6 +178,7 @@ function extensions() {
     return extensionPris;
 }
 
+/*Lager pris på hårvask*/
 function hårvask() {
     let hårvaskPris=0;
     let theForm = document.forms["fyll_inn"];
@@ -173,6 +189,7 @@ function hårvask() {
     return hårvaskPris;
 }
 
+/*Beregner totalprisen*/
 function calculateTotal() {
 
     let finalPrice = dame() + herre() + barn() + student() + senior() + foliestriper() + bayalage() + ettervekst() + vipper() + glans() + maskinklipp() + knivbarbering() + vask() + styling() + extensions() + hårvask();

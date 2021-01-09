@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>KLPP.</title>
+        <link rel="icon" type="image/svg" href="images/favicon.svg"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            #menyboks #søk_jobb_id {
+                color: rgb(244, 148, 30);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menyboks"></div>
+        <script src="modularity/menybar.js"></script>
+        <div class="wrapper">
+            <div class="wrapper-inside">
+                <header class="Bakgrunn">
+                    <img src="images/søk_jobb.png" width="100%">
+                    <h1 class="Overskrift">SØK JOBB</h1>
+                </header>
+                <article>
+                    <div class="søk_jobb">
+                        <p>Vi har veldig nylig åpnet tre frisørsalonger i Trondheim og er på utkikk etter flere ansatte. Føler du at kvalifikasjonene under beskriver deg, send gjerne inn en søknad.
+                        </p>
+                        <p><b>Ønskede kvalifikasjoner:</b></p>
+                        <ul>
+                            <li>Engasjert og initiativrik</li>
+                            <li>Punktlig og pålitelig</li>
+                            <li>Kreativ og løsningsorientert</li>
+                            <li>Fleksible</li>
+                            <li>Omsorgsfull</li>
+                            <li>Gode kommunikasjonsevner, med kunder og andre ansatte</li>
+                            <li>Gode språkferdigheter, både norsk og engelsk</li>
+                            <li>Erfaring fra liknende arbeid</li>
+                            <li>Relevant utdanning som frisør</li>
+                            <li>100% stilling</li>
+                        </ul>
+                    </div>
+                    <div class="søk_jobb">
+                        <form id="fyll_inn" onsubmit="return false">
+                            <div id="fornavn">
+                                <label for="fnavn">FORNAVN</label><br>
+                                <input type="text" id="fnavn" name="fnavn" required>
+                            </div>
+
+                            <div id="etternavn">
+                                <label for="enavn">ETTERNAVN</label><br>
+                                <input type="text" id="enavn" name="enavn" required>
+                            </div>
+
+                            <div id="e-mail">
+                                <label for="email">E-MAIL</label><br>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div id="telefon">
+                                <label for="tlf">TELEFON</label><br>
+                                <input type="number" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            </div>
+                            
+                            <div id="cven">
+                                <label>CV</label><br><br>
+                                <label for="CV" class="custom-file-upload">LEGG TIL FIL</label><br>
+                                <input type="file" id="CV" name="CV" size="60" multiple onclick="document.getElementById('cv_text').innerHTML = 'cv.docx';">
+                                <div id="cv_tekst"></div>
+                            </div>
+                            
+                            <div id="søk">
+                                <label for="søknad">DIN SØKNAD</label><br>
+                                <textarea id="søknad" name="søknad" rows="4" cols="50"></textarea> 
+                            </div>
+
+                            <button type="submit" value="SEND" id="send" onclick="giveFeedback()">SEND</button>
+                    </form>
+                </div>
+                <div id="userFeedback" class="feedback-all">
+                    <div class="feedback-content">
+                        <span class="close-window" onclick="closingWindow()">&times;</span>
+                        <p style="font-size: x-large;">SØKNADEN ER SENDT</p>
+                        <p>Takk for din søknad</p>
+                    </div>
+                </div>
+            </article>
+            </div>
+        </div>
+        <footer id="foot"></footer>
+        <script src="modularity/footer.js"></script>
+        <script src="scripts/bekreftelse.js"></script>
+    </body>
+</html>

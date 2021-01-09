@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLPP.</title>
+    <link rel="icon" type="image/svg" href="images/favicon.svg"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:rgb(179, 179, 179);">
+    <div id="menyboks"></div>
+    <script src="modularity/menybar.js"></script>
+    <div class="wrapper">
+        <div class="wrapper-inside">
+            <div id="slideshow_container">
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_1.png" alt="hjembilde_1" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_2.jpg" alt="hjembilde_2" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_3.jpg" alt="hjembilde_3" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_4.jpg" alt="hjembilde_4" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/bakgrunnsbilde_5.jpg" alt="hjembilde_5" style="width: 100%;">
+                </div>
+
+                <div id="bestill_knapp">
+                    <a href="bestill_time.html">BESTILL TIME</a>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer id="foot"></footer>
+    <script src="modularity/footer.js"></script>
+</body>
+</html>

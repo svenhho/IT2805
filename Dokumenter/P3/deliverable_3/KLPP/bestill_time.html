@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLPP.</title>
+    <link rel="icon" type="image/svg" href="images/favicon.svg"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      #menyboks #bestill_time_id {
+          color: rgb(244, 148, 30);
+      }
+  </style>
+</head>
+<body>
+  <div id="menyboks"></div>
+  <script src="modularity/menybar.js"></script>
+  <div class="wrapper">
+    <div class="wrapper-inside">
+      <header class="Bakgrunn">
+        <img src="images/bestill_time.jpg" alt="bestill time">
+        <h1 class="Overskrift">BESTILL TIME</h1>
+      </header>
+      <div class="bestill_time">
+        <form id="fyll_inn" onsubmit="return false">
+          <div id="fornavn">
+            <label for="fnavn">FORNAVN</label><br>
+            <input type="text" id="fnavn" name="fnavn" required>
+          </div>
+
+          <div id="etternavn">
+              <label for="enavn">ETTERNAVN</label><br>
+              <input type="text" id="enavn" name="enavn" required>
+          </div>
+
+          <div id="e-mail">
+              <label for="email">E-MAIL</label><br>
+              <input type="email" id="email" name="email" required>
+          </div>
+
+          <div id="telefon">
+              <label for="tlf">TELEFON</label><br>
+              <input type="number" id="tlf" name="tlf" required>
+          </div>
+          
+          <div id="salongene">
+            <label for="salong">VELG SALONG</label><br>
+            <select id="salong" name="salong" size="1" >
+            <option value="tiller">TILLER</option>
+            <option value="lade">LADE</option>
+            <option value="solsiden">SOLSIDEN</option>
+            </select><br>
+          </div>
+
+          <div id="kalender">
+            <label for="dato">DATO</label><br>
+            <input type="datetime-local" id="dato" name="dato"><br>
+          </div>
+
+          <div id="behandlingene">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <label>VELG BEHANDLING</label><br>
+              <select>
+                <option>KLIPP</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+
+            <div id="checkBoxes">KLIPP
+              <label for="dame">
+              <input type="checkbox" id="dame" value="dame" onclick="calculateTotal()"/>
+                DAMEKLIPP
+              </label>
+              <label for="herre">
+                <input type="checkbox" id="herre" value="herre" onclick="calculateTotal()"/>
+                HERREKLIPP
+              </label>
+              <label for="barn">
+                <input type="checkbox" id="barn" value="barn" onclick="calculateTotal()"/>
+                BARN(0-12ÅR)
+              </label>        
+              <label for="student">
+                <input type="checkbox" id="student" value="stundet" onclick="calculateTotal()"/>
+                STUDENT
+              </label>
+              <label for="senior">
+                <input type="checkbox" id="senior" value="senior" onclick="calculateTotal()"/>
+                SENIOR
+              </label>
+              <br>
+
+              FARGE
+              <label for="foliestriper">
+                <input type="checkbox" id="foliestriper" value="foliestriper" onclick="calculateTotal()"/>
+                FOLIESTRIPER
+              </label>
+              <label for="bayalage">
+                <input type="checkbox" id="bayalage" value="bayalage" onclick="calculateTotal()"/>
+                BAYALAGE
+              </label>
+              <label for="ettervekst">
+                <input type="checkbox" id="ettervekst" value="ettervekst" onclick="calculateTotal()"/>
+                ETTERVEKST
+              </label>
+              <label for="vipper">
+                <input type="checkbox" id="vipper" value="vipper" onclick="calculateTotal()"/>
+                VIPPER OG/ELLER BRYN
+              </label>
+              <label for="glans">
+                <input type="checkbox" id="glans" value="glans" onclick="calculateTotal()"/>
+                GLANS
+              </label>
+              <br>
+
+              SKJEGG
+              <label for="maskinklipp">
+                <input type="checkbox" id="maskinklipp" value="maskinklipp" onclick="calculateTotal()"/>
+                MASKINKLIPP
+              </label>
+              <label for="knivbarbering">
+                <input type="checkbox" id="knivbarbering" value="knivbarbering" onclick="calculateTotal()"/>
+                KNIVBARBERING
+              </label>
+              <label for="vask">
+                <input type="checkbox" id="vask" value="vask" onclick="calculateTotal()"/>
+                VASK OG STYLING
+              </label>
+              <br>
+
+              ANDRE BEHANDLINGER
+              <label for="styling">
+                <input type="checkbox" id="styling" value="styling" onclick="calculateTotal()"/>
+                STYLING
+              </label>
+              <label for="extensions">
+                <input type="checkbox" id="extensions" value="extensions" onclick="calculateTotal()"/>
+                EXTENSIONS
+              </label>
+              <label for="hårvask">
+                <input type="checkbox" id="hårvask" value="hårvask" onclick="calculateTotal()"/>
+                VASK OG STYLING
+              </label>
+            </div>
+          </div>
+
+          <div id="totalPris"></div>
+
+          <div id="frisør">
+            <label for="frisøren">VELG FRISØR</label><br>
+            <select id="frisøren" name="frisør" size="1" >
+            <option value="Johannes">JOHANNES</option>
+            <option value="Sven">SVEN</option>
+            <option value="Philip">PHILIP</option>
+            <option value="Dag">DAG</option>
+            <option value="Maja">MAJA</option>
+            <option value="Oda">ODA</option>
+            <option value="Kari">KARI</option>
+            </select><br>
+          </div>
+
+          <div id="covidd">
+            <input type="checkbox" name="checkboxcovid" value="check" id="agree" required />Jeg har lest og godtar vilkårene for <a href= "covid_19.html">Covid-19</a><br>
+          </div>
+
+          <button type="submit" value="SEND" id="send" onclick="giveResponse()">SEND</button> 
+        </form>
+        
+        <div id="userFeedback" class="feedback-all">
+          <div class="feedback-content">
+              <span class="close-window" onclick="closingWindow()">&times;</span>
+              <p style="font-size: x-large;">BESTILLINGEN ER MOTTATT</p>
+              <p>Vi sammenligner din bestilling med vår kalender, og 
+                 kontakter deg med et tilbud som best passer med dine spesifikasjoner</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer id="foot"></footer>
+  <script src="modularity/footer.js"></script>
+  <script src="scripts/priskalkulator.js"></script>
+  <script src="scripts/bekreftelse.js"></script>
+</body>
+</html>
